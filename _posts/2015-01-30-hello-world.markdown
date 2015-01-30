@@ -108,7 +108,7 @@ Jak możemy powiedzieć jakiego rodzaju jest zmienna? A oto mała tabelka do wk�
 <table class="FormatCSV" cellspacing="1" cellpadding="0"><tbody><tr><th>Nazwa typu</th><th>Ilość<br>Bajtów</th><th>Zakres wartości</th></tr><tr><td>bool</td><td>1</td><td><b>false</b> lub <b>true</b></td></tr><tr><td>char</td><td>1</td><td>od -128 do 127</td></tr><tr><td>unsigned char</td><td>1</td><td>od 0 do 255</td></tr><tr><td>wchar_t</td><td>2</td><td>od 0 do 65'535</td></tr><tr><td>short</td><td>2</td><td>od -32'768 do 32'767</td></tr><tr><td>unsigned short</td><td>2</td><td>od 0 do 65'535</td></tr><tr><td>int</td><td>4</td><td>od -2'147'483'648 do 2'147'483'647</td></tr><tr><td>unsigned int</td><td>4</td><td>od 0 do 4'294'967'295</td></tr><tr><td>long</td><td>4</td><td>od -2'147'483'648 do 2'147'483'647</td></tr><tr><td>unsigned long</td><td>4</td><td>od 0 do 4'294'967'295</td></tr><tr><td>long long</td><td>8</td><td>od -9'223'372'036'854'775'808</br>do 9'223'372'036'854'775'807</td></tr><tr><td>unsigned long long</td><td>8</td><td>od 0 do 18'446'744'073'709'551'615</td></tr><tr><td>float</td><td>4</td><td>3.4E +/- 38 (7 cyfr)</td></tr><tr><td>double</td><td>8</td><td>1.7E +/- 308 (15 cyfr)</td></tr><tr><td>long double</td><td>8</td><td>1.7E +/- 308 (15 cyfr)</td></tr></tbody></table>
 
 <p>Jak widzicie mamy parę typów zmiennych. Najbardziej podstawowe to:</br></br>
-int    - ziczba całkowia</br>
+int    - liczba całkowia</br>
 float  - liczba zmiennoprzecinkowa</br>
 char   - znak</br>
 string - łańcuch znaków, czyli tekst</p>
@@ -125,7 +125,7 @@ A teraz pokażmy ją na ekranie za pomocą polecenia cout:</p>
   cout << liczba;                   -230
 </pre>
 
-Zawartość zmiennej możemy w każdej chwili zmienić (nie no co ty):
+Zawartość zmiennej możemy w każdej chwili zmienić:
 
 <pre>
    int liczba = 230;
@@ -135,7 +135,7 @@ Zawartość zmiennej możemy w każdej chwili zmienić (nie no co ty):
 </pre>
 
 <p>Zauważcie, że tylko na samym początku dopisujemy int, ten proces nazywa się deklaracją zmiennej.
-Po zadeklarowaniu (stworzeniu) zmiennej już nie będziemy mogli zmienić jej rodzaju.</p>
+Po zadeklarowaniu (stworzeniu i nadaniu wartości) zmiennej już nie będziemy mogli zmienić jej rodzaju.</p>
 
 <p>cin (c in), to polecenie, za pomocą którego jesteśmy w stanie wprowadzić dane do środka programu.
 <pre>

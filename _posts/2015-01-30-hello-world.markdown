@@ -2,7 +2,7 @@
 layout:     post
 title:      "Hello World!"
 subtitle:   "Czyli duża dawka teorii."
-date:       2015-02-30 19:00:00
+date:       2015-01-31 01:00:00
 author:     "Mrozo"
 header-img: "img/post-bg-01.jpg"
 ---
@@ -17,7 +17,7 @@ Każdy poprawnie napisany program w C będzie jednocześnie poprawnym programem 
 
 Tak, wiem że każdy z was chciałby po tygodniu robić własne Wiedźminy, jednak zanim zaczniemy tworzyć takie cuda, musimy zająć się tym:
 
-<pre>
+<pre class="colorx">
 <code class="c++">
 &#35;include &#60;iostream&#62;
 
@@ -46,11 +46,11 @@ Dzięki temu my nie musimy pisać paruset linijek kodu. Oczywiście isnieje wię
 
 <h2 class="section-heading">using namespace std;</h2>
 
-<p>Using namespace std oznacza "używanie przestrzeni nazw std"
+<p class="midmar">Using namespace std oznacza "używanie przestrzeni nazw std"
 Każde polecenie znajduje się w danej przestrzeni nazw. Po co i co to jest?
 Jeżeli programista Hankiewicz chciałby napisać sobie polecenie "zrobmidobrze" i w tym samym momencie drugi programista zrobiłby takie samo, a oba wczytalibyśmy z bibliotek, program nie miałby pojęcia, o które polecenie nam chodzi. Dlatego powstały przestrzenie nazw. Od teraz możemy napisać:</p>
 
-<p>hankiewicz::zrobmidobrze</p>
+<p class="lowmar">hankiewicz::zrobmidobrze</p>
 <p>programista2::zrobmidobrze</p>
 
 <p>Dzięki temu program się nie pogubi. No dobrze, ale po co to using namespace? Jeżeli wiemy, że w namym programie nie będziemy używać dwóch jednakowych zestawów poleceń możemy ustawić jedną przestrzeń:</p>
@@ -147,13 +147,13 @@ Po zadeklarowaniu (stworzeniu i nadaniu wartości) zmiennej już nie będziemy m
 
 <p>A teraz połączmy strumienie (tak, to co braliśmy na linuxie!) i dodajmy endl, czyli end of line:</p>
 
-<pre>
+<pre class="lowmar">
   string imie = "";
   cin >> imie;                   -przyjmijmy, że wpisuje Grzybiarz
   cout << "Witaj " << imie << "." << endl << "Pierogi.";
 </pre>
 
-<p>Rezultat:</p>
+Rezultat:
 
 <pre>
   Witaj Grzybiarz.
@@ -191,6 +191,6 @@ Plik zawierający efekt końcowy to tak zwany kod wykonalny.</p>
 
 <h2 class="section-heading">Zadania:</h2>
 
-<p>1. Napisz program, który prosi użytkownika o wprowadzenie wieku, a następnie wyświetla wiek użytkownika podany w miesiącach.</p>
+<p class="lowmar">1. Napisz program, który prosi użytkownika o wprowadzenie wieku, a następnie wyświetla wiek użytkownika podany w miesiącach.</p>
 
 <p>2. Napisz program, który prosi użytkownika o podanie liczby godzin i minut, po czym wyświetla je w formie: "Czas: godzina:minuty", czyli np. "Czas: 23:56". </p>

@@ -1,0 +1,43 @@
+pre
+{
+  font-size: 18px;
+  overflow-x: auto;
+  font-weight: 300;
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+  color: #5c5c5c;
+  background-color: #fcfcfc;
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+}
+
+pre code
+{
+    overflow-wrap: normal;
+    white-space: pre;
+}
+
+
+p
+{
+  color: #292929;
+  margin-top: 15px;
+  margin-bottom: 55px;
+}
+
+.colorx
+{
+  background-color: #282B2E;
+}
+
+.lowmar
+{
+  margin-bottom: 10px;
+}
+
+.midmar
+{
+  margin-bottom: 30px;
+}

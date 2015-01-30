@@ -163,7 +163,7 @@ hr.small {
 .intro-header .page-heading .subheading {
   font-size: 24px;
   line-height: 1.1,
-			display: block;
+      display: block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin: 10px 0 0;
@@ -245,7 +245,8 @@ hr.small {
 }
 .section-heading {
   font-size: 36px;
-  margin-top: 60px;
+  margin-top: 80px;
+  margin-bottom: 27px;
   font-weight: 700;
 }
 .caption {

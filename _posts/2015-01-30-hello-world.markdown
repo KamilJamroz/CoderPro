@@ -38,7 +38,7 @@ Niestety, zanim przejdziemy do bardziej skomplikowanych struktur, musimy zrozumi
 
 <p>&#35;include to dyrektywa preprocesora, a po polsku: include znaczy "zawierać", "io" to skrót od "input", "output", a stream to "strumień".
 Łącząc wszystko w jedną całość uzyskamy coś w rodzaju "Zawrzyj strumień wejścia i wyjścia"
-Oznacza to, że kiedy program zacznie się kompilować właśnie w tym miejscu pojawi się kod, który pozwoli komputerowi kontaktować się z użytkownikiem. Jeżeliwpiszemy coś do konsoli, komputr będzie mógł to odczytać (wejście) i zwrócić nam jakąś informację (wyjście).
+Oznacza to, że kiedy program zacznie się kompilować właśnie w tym miejscu pojawi się kod, który pozwoli komputerowi kontaktować się z użytkownikiem. Jeżeli wpiszemy coś do konsoli, komputr będzie mógł to odczytać (wejście) i zwrócić nam jakąś informację (wyjście).
 Przydatna biblioteka, co?
 Właśnie, to jest polecenie wczytujące bibliotekę, czyli zbiór poleceń.
 Dzięki temu my nie musimy pisać paruset linijek kodu. Oczywiście isnieje więcej bibliotek, nauczymy się nawet pisać włane. </p>
@@ -87,7 +87,7 @@ using std::cin;
 </pre>
 
 <p>Znamy już podstawy przestrzeni nazw. W takim razie jakie polecenia są w ::std? (standard library)
-Te, których dzisiaj będziemy używać to cin, cout oraz endl</p>
+Te, których dzisiaj będziemy używać to cout, cin oraz endl.</p>
 
 <h2 class="section-heading">Cout Cin Endl</h2>
 
@@ -99,27 +99,27 @@ cout << 2+8;                              -10
 </pre>
 
 <p>Tak! c++ potrafi liczyć. Wszystko zawarte w cudzysłowiach jest liczone jako tekst.
-teraz wprowadźmy zmienne.
+Teraz wprowadźmy zmienne.
 
-<h3><i>Zmienna</i></h3> to nic innego jak pojemnik na dane. Każda zmienna ma swój rodzaj, może to być tekst, liczba całkowita, liczba zmiennoprzecinkowa, znak.
+<h3><i>Zmienna</i></h3> to nic innego jak pojemnik na dane. Każda zmienna ma swój rodzaj: może to być tekst, liczba całkowita, liczba zmiennoprzecinkowa, znak.
 Jak możemy powiedzieć jakiego rodzaju jest zmienna? A oto mała tabelka do wkłucia:
 </p>
 
 <table class="FormatCSV" cellspacing="1" cellpadding="0"><tbody><tr><th>Nazwa typu</th><th>Ilość<br>Bajtów</th><th>Zakres wartości</th></tr><tr><td>bool</td><td>1</td><td><b>false</b> lub <b>true</b></td></tr><tr><td>char</td><td>1</td><td>od -128 do 127</td></tr><tr><td>unsigned char</td><td>1</td><td>od 0 do 255</td></tr><tr><td>wchar_t</td><td>2</td><td>od 0 do 65'535</td></tr><tr><td>short</td><td>2</td><td>od -32'768 do 32'767</td></tr><tr><td>unsigned short</td><td>2</td><td>od 0 do 65'535</td></tr><tr><td>int</td><td>4</td><td>od -2'147'483'648 do 2'147'483'647</td></tr><tr><td>unsigned int</td><td>4</td><td>od 0 do 4'294'967'295</td></tr><tr><td>long</td><td>4</td><td>od -2'147'483'648 do 2'147'483'647</td></tr><tr><td>unsigned long</td><td>4</td><td>od 0 do 4'294'967'295</td></tr><tr><td>long long</td><td>8</td><td>od -9'223'372'036'854'775'808</br>do 9'223'372'036'854'775'807</td></tr><tr><td>unsigned long long</td><td>8</td><td>od 0 do 18'446'744'073'709'551'615</td></tr><tr><td>float</td><td>4</td><td>3.4E +/- 38 (7 cyfr)</td></tr><tr><td>double</td><td>8</td><td>1.7E +/- 308 (15 cyfr)</td></tr><tr><td>long double</td><td>8</td><td>1.7E +/- 308 (15 cyfr)</td></tr></tbody></table>
 
-<p>Jak widzicie mamy parę typów zmiennych. Najbardziej podstawowe to:</br></br>
-int    - liczba całkowia</br>
-float  - liczba zmiennoprzecinkowa</br>
-char   - znak</br>
+<p>Jak widzicie mamy parę typów zmiennych. Najbardziej podstawowe to:<br>
+int    - liczba całkowia<br>
+float  - liczba zmiennoprzecinkowa<br>
+char   - znak<br>
 string - łańcuch znaków, czyli tekst</p>
 
-<p>Teraz do dzieła, zrobimy zmienną o nazwie liczba przechowującą liczbę całkowitą 230 </br>
+<p>Teraz do dzieła. Zrobimy zmienną o nazwie liczba przechowującą liczbę całkowitą 230: <br>
 
 <pre>
   int liczba = 230;
 </pre>
 
-A teraz pokażmy ją na ekranie za pomocą polecenia cout:</p>
+A teraz wyświetlimy ją na ekranie za pomocą polecenia cout:</p>
 
 <pre>
   cout << liczba;                   -230
@@ -145,7 +145,7 @@ Po zadeklarowaniu (stworzeniu i nadaniu wartości) zmiennej już nie będziemy m
 </pre>
 </p>
 
-<p>A teraz połączmy strumienie (tak, to co braliśmy na linuxie!) i dodajmy endl, czyli end line:</p>
+<p>A teraz połączmy strumienie (tak, to co braliśmy na linuxie!) i dodajmy endl, czyli end of line:</p>
 
 <pre>
   string imie = "";
@@ -164,8 +164,8 @@ Po zadeklarowaniu (stworzeniu i nadaniu wartości) zmiennej już nie będziemy m
 
 <p>Funkcje to bardzo ważny i rozległy temat, dlatego dzisiaj dowiemy się tylko o co chodzi z tym main.
 
-Każdy program rozpoczyna swoje działanie od funkcji main()
-W środku niej znajdują się wszystkie instrukcje.
+Każdy program rozpoczyna swoje działanie od funkcji main().
+W jej środku znajdują się wszystkie instrukcje.
 Return 0, czyli zwróć 0 mówi tej funkcji (czyli też programowi) żeby zakończya swoje działanie.</p>
 
 <pre>
@@ -181,7 +181,7 @@ Return 0, czyli zwróć 0 mówi tej funkcji (czyli też programowi) żeby zakoń
 
 <h2 class="section-heading">Mechanika Tworzenia Programu</h2>
 
-<p>Załóżmy,że napisaliśmy ten kod. Jak mamy go uruchomić?</p>
+<p>Załóżmy, że napisaliśmy ten kod. Jak mamy go uruchomić?</p>
 <p>1. Za pomocą edytora tekstu piszemy program i zapisujemy go w pliku. Plik ten jest kodem źródłowym programu.</p>
 <p>2. Kompilujemy kod źródłowy, czyli uruchamiamy program tłumaczący nasze wypociny na 0110001000001101010, czyli kod maszynowy (komputer w końcu może go zrozumieć). Taki kod nazywamy kodem wynikowym programu.</p>
 <p>3. Konsoliduje się kod wynikowy z dodatkowymi zasobami. Na przykład z bibliotekami. Konsolidacja polega na łączeniu własnego kodu wynikowego z kodem wynikowym używanych funkcji (tych poleceń z bibliotek) oraz dodatkowym kodem startowym, który pozwala nasz program w ogóle uruchomić.

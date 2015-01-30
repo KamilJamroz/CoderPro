@@ -7,8 +7,8 @@ author:     "Mrozo"
 header-img: "img/post-bg-01.jpg"
 ---
 
+<h2 class="section-heading">Nauka c++ - co nas czeka?</h2>
 
-<p>Nauka c++ - co nas czeka?</p>
 
 <p>Jednym z powodów uczenia się C++ jest chęć opanowania jego możliwości obiektowych. Jednak do tego potrzebne są podstawy języka C, gdyż z niego pochodzą typy podstawowe, operatory i duża część składni.
 Każdy poprawnie napisany program w C będzie jednocześnie poprawnym programem języka C++, czyli C jest podzbiorem C++. Bla Bla Bla</p>
@@ -122,7 +122,7 @@ A teraz pokażmy ją na ekranie za pomocą polecenia cout:</p>
   cout << liczba;                   -230
 </pre>
 
-Zawartość zmiennej możemy w każdej chwili zmienić (nie no co ty)
+Zawartość zmiennej możemy w każdej chwili zmienić (nie no co ty):
 
 <pre>
    int liczba = 230;
@@ -142,7 +142,7 @@ Po zadeklarowaniu (stworzeniu) zmiennej już nie będziemy mogli zmienić jej ro
 </pre>
 </p>
 
-<p>A teraz połączmy strumienie (tak, to co bralićmy na linuxie!) i dodajmy endl, czyli end line.</p>
+<p>A teraz połączmy strumienie (tak, to co bralićmy na linuxie!) i dodajmy endl, czyli end line:</p>
 
 <pre>
   string imie = "";
@@ -174,12 +174,14 @@ Return 0, czyli zwróć 0 mówi tej funkcji (czyli też programowi) żeby zakoń
 </pre>
 
 
+
+
 <h2 class="section-heading">Mechanika Tworzenia Programu</h2>
 
 <p>Załóżmy,że napisaliśmy ten kod. Jak mamy go uruchomić?</p>
-<p>1. Za pomocą edytora tekstu piszemy program i zapisujemy go w pliku. Plik ten jest kodem źródłowym programu.</br>
-2. Kompilujemy kod źródłowy, czyli uruchamiamy program tłumaczący nasze wypociny na 0110001000001101010, czyli kod maszynowy (komputer w końcu może go zrozumieć). Taki kod nazywamy kodem wynikowym programu.</br>
-3. Konsoliduje się kod wynikowy z dodatkowymi zasobami. Na przykład z bibliotekami. Konsolidacja polega na łączeniu własnego kodu wynikowego z kodem wynikowym używanych funkcji (tych poleceń z bibliotek) oraz dodatkowym kodem startowym, który pozwala nasz program w ogóle uruchomić.
+<p>1. Za pomocą edytora tekstu piszemy program i zapisujemy go w pliku. Plik ten jest kodem źródłowym programu.</p>
+<p>2. Kompilujemy kod źródłowy, czyli uruchamiamy program tłumaczący nasze wypociny na 0110001000001101010, czyli kod maszynowy (komputer w końcu może go zrozumieć). Taki kod nazywamy kodem wynikowym programu.</p>
+<p>3. Konsoliduje się kod wynikowy z dodatkowymi zasobami. Na przykład z bibliotekami. Konsolidacja polega na łączeniu własnego kodu wynikowego z kodem wynikowym używanych funkcji (tych poleceń z bibliotek) oraz dodatkowym kodem startowym, który pozwala nasz program w ogóle uruchomić.
 Plik zawierający efekt końcowy to tak zwany kod wykonalny.</p>
 
 <blockquote>Niejednokrotnie powtarzałem, że materiały uwcześniej przerobione oraz przyswojone z gimnazjum pozwolą wam na wykonanie poniższych zadań, a jeżeli nie: i tu już Cienki koleś z ciebie!</blockquote>

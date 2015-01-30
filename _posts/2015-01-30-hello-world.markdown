@@ -145,7 +145,7 @@ Po zadeklarowaniu (stworzeniu) zmiennej już nie będziemy mogli zmienić jej ro
 </pre>
 </p>
 
-<p>A teraz połączmy strumienie (tak, to co bralićmy na linuxie!) i dodajmy endl, czyli end line:</p>
+<p>A teraz połączmy strumienie (tak, to co braliśmy na linuxie!) i dodajmy endl, czyli end line:</p>
 
 <pre>
   string imie = "";
@@ -187,10 +187,10 @@ Return 0, czyli zwróć 0 mówi tej funkcji (czyli też programowi) żeby zakoń
 <p>3. Konsoliduje się kod wynikowy z dodatkowymi zasobami. Na przykład z bibliotekami. Konsolidacja polega na łączeniu własnego kodu wynikowego z kodem wynikowym używanych funkcji (tych poleceń z bibliotek) oraz dodatkowym kodem startowym, który pozwala nasz program w ogóle uruchomić.
 Plik zawierający efekt końcowy to tak zwany kod wykonalny.</p>
 
-<blockquote>Niejednokrotnie powtarzałem, że materiały uwcześniej przerobione oraz przyswojone z gimnazjum pozwolą wam na wykonanie poniższych zadań, a jeżeli nie: i tu już Cienki koleś z ciebie!</blockquote>
+<blockquote>Niejednokrotnie powtarzałem, że materiały uwcześniej przerobione oraz przyswojone z gimnazjum pozwolą wam na wykonanie poniższych zadań, a jeżeli nie: i tu już pomi... krótki koleś z ciebie!</blockquote>
 
 <h2 class="section-heading">Zadania:</h2>
 
 <p>1. Napisz program, który prosi użytkownika o wprowadzenie wieku, a następnie wyświetla wiek użytkownika podany w miesiącach.</p>
 
-<p>2. Napisz program, który prosi użytkownika o podanie liczby godzin i minut, po czym wyświetla je w formie: "Czas: godzinu:minuty", czyli np. "Czas: 23:56". </p>
+<p>2. Napisz program, który prosi użytkownika o podanie liczby godzin i minut, po czym wyświetla je w formie: "Czas: godzina:minuty", czyli np. "Czas: 23:56". </p>

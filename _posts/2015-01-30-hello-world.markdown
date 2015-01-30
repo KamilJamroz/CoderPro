@@ -17,7 +17,7 @@ Każdy poprawnie napisany program w C będzie jednocześnie poprawnym programem 
 
 Tak, wiem że każdy z was chciałby po tygodniu robić własne Wiedźminy, jednak zanim zaczniemy tworzyć takie cuda, musimy zająć się tym:
 
-
+<pre>
 <code class="c++">
 &#35;include &#60;iostream&#62;
 
@@ -28,9 +28,8 @@ int main()
    cout >> "Hello World!";
    return 0;
 }
-
-
 </code>
+</pre>
 
 
 Niestety, zanim przejdziemy do bardziej skomplikowanych struktur, musimy zrozumieć co właściwie dzieje się nieco wyżej.

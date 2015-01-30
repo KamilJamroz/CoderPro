@@ -29,8 +29,9 @@ int main()
    return 0;
 }
 
-</pre>
+
 </code>
+</pre>
 
 Niestety, zanim przejdziemy do bardziej skomplikowanych struktur, musimy zrozumieć co właściwie dzieje się nieco wyżej.
 

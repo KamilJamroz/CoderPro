@@ -74,13 +74,16 @@ funkcja3
 siema
 </pre>
 
-i program sam będzie wiedział jakiej przestrzeni nazw używamy.
+<p>i program sam będzie wiedział jakiej przestrzeni nazw używamy.
 Pomyślcie ile właśnie zaoszczędziliście czasu.
-Oczywiście w ogromnych projektach może to stanowić problem, dlatego możemy również ustawić przestrzeń nie dla wszystkich poleceń hankiewicza, ale tylko dla jednego:</p>
+Oczywiście w ogromnych projektach może to stanowić problem, dlatego możemy również ustawić przestrzeń nie dla wszystkich poleceń hankiewicza, ale tylko dla jednego:
+</p>
 
 
 <pre>
-------------------
+using std::cout;
+using std::endl;
+using std::cin;
 </pre>
 
 <p>Znamy już podstawy przestrzeni nazw. W takim razie jakie polecenia są w ::std? (standard library)

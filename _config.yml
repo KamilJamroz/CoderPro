@@ -1,13 +1,13 @@
 # Site settings
 title: CoderPro
 header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-description: "Write your site description here. It will be used as your sites meta description as well!"
+email: kamiljamroz@outlook.com
+description: "CoderPro!"
 baseurl: "/CoderPro"
 url: "http://CoderPro2xpl.com"
-twitter_username: SBootstrap
-github_username:  davidtmiller
-facebook_username:  IronSummitMedia
+twitter_username: NergyDesign
+github_username:  MrozoPL
+facebook_username:  Kamil Jamróz
 
 # Build settings
 markdown: kramdown

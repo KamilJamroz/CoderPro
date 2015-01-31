@@ -7,7 +7,7 @@ author:     "Mrozo"
 header-img: "img/post-bg-01.jpg"
 ---
 
-<h2 class="section-heading">Nauka c++ - co nas czeka?</h2>
+<h2 class="section-heading toph">Nauka c++ - co nas czeka?</h2>
 
 
 <p>Jednym z powodów uczenia się C++ jest chęć opanowania jego możliwości obiektowych. Jednak do tego potrzebne są podstawy języka C, gdyż z niego pochodzą typy podstawowe, operatory i duża część składni.
@@ -46,17 +46,20 @@ Dzięki temu my nie musimy pisać paruset linijek kodu. Oczywiście isnieje wię
 
 <h2 class="section-heading">using namespace std;</h2>
 
-<p class="midmar">Using namespace std oznacza "używanie przestrzeni nazw std"
+<p class="lowmar">Using namespace std oznacza "używanie przestrzeni nazw std"
 Każde polecenie znajduje się w danej przestrzeni nazw. Po co i co to jest?
 Jeżeli programista Hankiewicz chciałby napisać sobie polecenie "zrobmidobrze" i w tym samym momencie drugi programista zrobiłby takie samo, a oba wczytalibyśmy z bibliotek, program nie miałby pojęcia, o które polecenie nam chodzi. Dlatego powstały przestrzenie nazw. Od teraz możemy napisać:</p>
 
-<p class="lowmar">hankiewicz::zrobmidobrze</p>
-<p>programista2::zrobmidobrze</p>
+<pre>
+hankiewicz::zrobmidobrze
+programista2::zrobmidobrze
+</pre>
 
-<p>Dzięki temu program się nie pogubi. No dobrze, ale po co to using namespace? Jeżeli wiemy, że w namym programie nie będziemy używać dwóch jednakowych zestawów poleceń możemy ustawić jedną przestrzeń:</p>
-<p>using namespace hankiewicz;</p>
+<p class="lowmar">Dzięki temu program się nie pogubi. No dobrze, ale po co to using namespace? Jeżeli wiemy, że w namym programie nie będziemy używać dwóch jednakowych zestawów poleceń możemy ustawić jedną przestrzeń:</p>
 
-<p>I od teraz nie musimy pisać za każdym razem:</p>
+<pre>using namespace hankiewicz;</pre>
+
+<p class="lowmar">I od teraz nie musimy pisać za każdym razem:</p>
 
 <pre>
 hankiewicz::zrobmidobrze
@@ -65,7 +68,7 @@ hankiewicz::funkcja3
 hankiewicz::siema
 </pre>
 
-tylko możemy zrobić tak:
+<p class="lowmar">tylko możemy zrobić tak:</p>
 
 <pre>
 zrobmidobrze
@@ -74,7 +77,7 @@ funkcja3
 siema
 </pre>
 
-<p>i program sam będzie wiedział jakiej przestrzeni nazw używamy.
+<p class="lowmar">i program sam będzie wiedział jakiej przestrzeni nazw używamy.
 Pomyślcie ile właśnie zaoszczędziliście czasu.
 Oczywiście w ogromnych projektach może to stanowić problem, dlatego możemy również ustawić przestrzeń nie dla wszystkich poleceń hankiewicza, ale tylko dla jednego:
 </p>
@@ -91,11 +94,11 @@ Te, których dzisiaj będziemy używać to cout, cin oraz endl.</p>
 
 <h2 class="section-heading">Cout Cin Endl</h2>
 
-<p>cout (c out), to polecenie, za pomocą którego program może wyświetlić dane na naszym ekranie.</p>
+<p class="lowmar"><b>cout</b> (c out) to polecenie, za pomocą którego program może wyświetlić dane na naszym ekranie.</p>
 <pre>
-cout << "Hello World!";                   -Hello World!
-cout << "2+8";                            -2+8
-cout << 2+8;                              -10
+cout << "Hello World!";                   <span class="output">Hello World!</span>
+cout << "2+8";                            <span class="output">2+8</span>
+cout << 2+8;                              <span class="output">10</span>
 </pre>
 
 <p>Tak! c++ potrafi liczyć. Wszystko zawarte w cudzysłowiach jest liczone jako tekst.
@@ -113,43 +116,43 @@ float  - liczba zmiennoprzecinkowa<br>
 char   - znak<br>
 string - łańcuch znaków, czyli tekst</p>
 
-<p>Teraz do dzieła. Zrobimy zmienną o nazwie liczba przechowującą liczbę całkowitą 230: <br>
+<p class="lowmar">Teraz do dzieła. Zrobimy zmienną o nazwie liczba przechowującą liczbę całkowitą 230: <br>
 
 <pre>
   int liczba = 230;
 </pre>
 
-A teraz wyświetlimy ją na ekranie za pomocą polecenia cout:</p>
+<p class="lowmar">A teraz wyświetlimy ją na ekranie za pomocą polecenia cout:</p>
 
 <pre>
-  cout << liczba;                   -230
+  cout << liczba;                   <span class="output">230</span>
 </pre>
 
-Zawartość zmiennej możemy w każdej chwili zmienić:
+<p class="lowmar">Zawartość zmiennej możemy w każdej chwili zmienić:</p>
 
 <pre>
-   int liczba = 230;
-  cout << liczba;                   -230
+  int liczba = 230;
+  cout << liczba;                   <span class="output">230</span>
   liczba = 20;
-  cout << liczba;                   -20
+  cout << liczba;                   <span class="output">20</span>
 </pre>
 
 <p>Zauważcie, że tylko na samym początku dopisujemy int, ten proces nazywa się deklaracją zmiennej.
 Po zadeklarowaniu (stworzeniu i nadaniu wartości) zmiennej już nie będziemy mogli zmienić jej rodzaju.</p>
 
-<p>cin (c in), to polecenie, za pomocą którego jesteśmy w stanie wprowadzić dane do środka programu.
+<p class="lowmar"><b>cin</b> (c in), to polecenie, za pomocą którego jesteśmy w stanie wprowadzić dane do środka programu.
 <pre>
   int liczba = 0;
-  cin >> liczba;                   -to podaje użytkownik
-  cout << liczba;                  -to co wprowadził zostało zapisane i teraz jest wyświetlone
+  cin >> liczba;                   to podaje użytkownik
+  cout << liczba;                  to co wprowadził zostało zapisane i teraz jest wyświetlone
 </pre>
 </p>
 
-<p>A teraz połączmy strumienie (tak, to co braliśmy na linuxie!) i dodajmy endl, czyli end of line:</p>
+<p class="lowmar">A teraz połączmy strumienie (tak, to co braliśmy na linuxie!) i dodajmy endl, czyli end of line:</p>
 
-<pre class="lowmar">
+<pre class="midmar">
   string imie = "";
-  cin >> imie;                   -przyjmijmy, że wpisuje Grzybiarz
+  cin >> imie;                   przyjmijmy, że wpisuje Grzybiarz
   cout << "Witaj " << imie << "." << endl << "Pierogi.";
 </pre>
 
@@ -162,7 +165,7 @@ Rezultat:
 
 <h2 class="section-heading">Funkcja Main()</h2>
 
-<p>Funkcje to bardzo ważny i rozległy temat, dlatego dzisiaj dowiemy się tylko o co chodzi z tym main.
+<p class="midmar">Funkcje to bardzo ważny i rozległy temat, dlatego dzisiaj dowiemy się tylko o co chodzi z tym main.
 
 Każdy program rozpoczyna swoje działanie od funkcji main().
 W jej środku znajdują się wszystkie instrukcje.

@@ -10,11 +10,11 @@ header-img: "img/post-bg-01.jpg"
 <h2 class="section-heading toph">Nauka c++ - co nas czeka?</h2>
 
 
-<p id="lol">Jednym z powodów uczenia się C++ jest chęć opanowania jego możliwości obiektowych. Jednak do tego potrzebne są podstawy języka C, gdyż z niego pochodzą typy podstawowe, operatory i duża część składni.
+<p class="midmar">Jednym z powodów uczenia się C++ jest chęć opanowania jego możliwości obiektowych. Jednak do tego potrzebne są podstawy języka C, gdyż z niego pochodzą typy podstawowe, operatory i duża część składni.
 Każdy poprawnie napisany program w C będzie jednocześnie poprawnym programem języka C++, czyli C jest podzbiorem C++. Bla Bla Bla</p>
 
 
-Tak, wiem że każdy z was chciałby po tygodniu robić własne Wiedźminy, jednak zanim zaczniemy tworzyć takie cuda, musimy zająć się tym:
+<p class="midmar">Tak, wiem że każdy z was chciałby po tygodniu robić własne Wiedźminy, jednak zanim zaczniemy tworzyć takie cuda, musimy zająć się tym:</p>
 
 <pre class="colorx">
 <code class="c++">
@@ -30,7 +30,7 @@ int main()
 </code>
 </pre>
 
-Niestety, zanim przejdziemy do bardziej skomplikowanych struktur, musimy zrozumieć co właściwie dzieje się nieco wyżej.
+Niestety zanim przejdziemy do bardziej skomplikowanych struktur musimy zrozumieć co właściwie dzieje się nieco wyżej.
 
 <h2 class="section-heading">&#35;include</h2>
 
@@ -45,14 +45,14 @@ Dzięki temu my nie musimy pisać paruset linijek kodu. Oczywiście isnieje wię
 
 <p class="lowmar">Using namespace std oznacza "używanie przestrzeni nazw std"
 Każde polecenie znajduje się w danej przestrzeni nazw. Po co i co to jest?
-Jeżeli programista Hankiewicz chciałby napisać sobie polecenie "zrobmidobrze" i w tym samym momencie drugi programista zrobiłby takie samo, a oba wczytalibyśmy z bibliotek, program nie miałby pojęcia, o które polecenie nam chodzi. Dlatego powstały przestrzenie nazw. Od teraz możemy napisać:</p>
+Jeżeli programista1 chciałby napisać sobie polecenie "jakasfunkcja" i w tym samym momencie drugi programista zrobiłby takie samo, a oba wczytalibyśmy z bibliotek. Program nie miałby pojęcia, o które polecenie nam chodzi, dlatego powstały przestrzenie nazw. Od teraz możemy napisać:</p>
 
 <pre>
 programista1::jakasfunkcja
 programista2::jakasfunkcja
 </pre>
 
-<p class="lowmar">Dzięki temu program się nie pogubi. No dobrze, ale po co to using namespace? Jeżeli wiemy, że w namym programie nie będziemy używać dwóch jednakowych zestawów poleceń możemy ustawić jedną przestrzeń:</p>
+<p class="lowmar">Dzięki temu program się nie pogubi. No dobrze, ale po co to using namespace? Jeżeli wiemy, że w namym programie nie będziemy używać dwóch jednakowych zestawów poleceń możemy ustawić jedną przestrzeń jako domyślną:</p>
 
 <pre>using namespace programista1;</pre>
 
@@ -74,9 +74,9 @@ funkcja3
 siema
 </pre>
 
-<p class="lowmar">i program sam będzie wiedział jakiej przestrzeni nazw używamy.
+<p class="lowmar">i program sam będzie wiedział jakiej przestrzeni używamy.
 Pomyślcie ile właśnie zaoszczędziliście czasu.
-Oczywiście w ogromnych projektach może to stanowić problem, dlatego możemy również ustawić przestrzeń nie dla wszystkich poleceń hankiewicza, ale tylko dla jednego:
+Oczywiście w ogromnych projektach może to stanowić problem, dlatego możemy również ustawić przestrzeń nie dla wszystkich poleceń, ale tylko dla jednego:
 </p>
 
 <pre>
@@ -85,7 +85,7 @@ using std::endl;
 using std::cin;
 </pre>
 
-<p>Znamy już podstawy przestrzeni nazw. W takim razie jakie polecenia są w ::std? (standard library)
+<p>Znamy już podstawy przestrzeni nazw. W takim razie jakie polecenia znajdująsię w przestrzeni nazw ::std? (standard library)
 Te, których dzisiaj będziemy używać to cout, cin oraz endl.</p>
 
 <h2 class="section-heading">Cout Cin Endl</h2>
@@ -106,13 +106,14 @@ Jak możemy powiedzieć jakiego rodzaju jest zmienna? A oto mała tabelka do wk�
 
 <table class="FormatCSV" cellspacing="1" cellpadding="0"><tbody><tr><th>Nazwa typu</th><th>Ilość<br>Bajtów</th><th>Zakres wartości</th></tr><tr><td>bool</td><td>1</td><td><b>false</b> lub <b>true</b></td></tr><tr><td>char</td><td>1</td><td>od -128 do 127</td></tr><tr><td>unsigned char</td><td>1</td><td>od 0 do 255</td></tr><tr><td>wchar_t</td><td>2</td><td>od 0 do 65'535</td></tr><tr><td>short</td><td>2</td><td>od -32'768 do 32'767</td></tr><tr><td>unsigned short</td><td>2</td><td>od 0 do 65'535</td></tr><tr><td>int</td><td>4</td><td>od -2'147'483'648 do 2'147'483'647</td></tr><tr><td>unsigned int</td><td>4</td><td>od 0 do 4'294'967'295</td></tr><tr><td>long</td><td>4</td><td>od -2'147'483'648 do 2'147'483'647</td></tr><tr><td>unsigned long</td><td>4</td><td>od 0 do 4'294'967'295</td></tr><tr><td>long long</td><td>8</td><td>od -9'223'372'036'854'775'808</br>do 9'223'372'036'854'775'807</td></tr><tr><td>unsigned long long</td><td>8</td><td>od 0 do 18'446'744'073'709'551'615</td></tr><tr><td>float</td><td>4</td><td>3.4E +/- 38 (7 cyfr)</td></tr><tr><td>double</td><td>8</td><td>1.7E +/- 308 (15 cyfr)</td></tr><tr><td>long double</td><td>8</td><td>1.7E +/- 308 (15 cyfr)</td></tr></tbody></table>
 
-<p>Jak widzicie mamy parę typów zmiennych. Najbardziej podstawowe to:<br>
+<p class="midmar">Jak widzicie mamy parę typów zmiennych. Najbardziej podstawowe to:
+<br><br>
 int    - liczba całkowia<br>
 float  - liczba zmiennoprzecinkowa<br>
 char   - znak<br>
 string - łańcuch znaków, czyli tekst</p>
 
-<p class="lowmar">A teraz stwórzmy zmienną o nazwie liczba przechowującą liczbę całkowitą 230:</p>
+<p class="lowmar">Stwórzmy zmienną o nazwie liczba przechowującą liczbę całkowitą 230:</p>
 
 <pre>
   int liczba = 230;

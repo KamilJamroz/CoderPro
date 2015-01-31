@@ -143,8 +143,8 @@ Po zadeklarowaniu (stworzeniu i nadaniu wartości) zmiennej już nie będziemy m
 <p class="lowmar"><b>cin</b> (c in), to polecenie, za pomocą którego jesteśmy w stanie wprowadzić dane do środka programu.
 <pre>
   int liczba = 0;
-  cin >> liczba;                   to podaje użytkownik
-  cout << liczba;                  to co wprowadził zostało zapisane i teraz jest wyświetlone
+  cin >> liczba;                   <span class="output">to podaje użytkownik</span>
+  cout << liczba;                  <span class="output">to co wprowadził zostało zapisane i teraz jest wyświetlone</span>
 </pre>
 </p>
 
@@ -152,7 +152,7 @@ Po zadeklarowaniu (stworzeniu i nadaniu wartości) zmiennej już nie będziemy m
 
 <pre class="midmar">
   string imie = "";
-  cin >> imie;                   przyjmijmy, że wpisuje Grzybiarz
+  cin >> imie;                   <span class="output">przyjmijmy, że wpisuje Grzybiarz</span>
   cout << "Witaj " << imie << "." << endl << "Pierogi.";
 </pre>
 

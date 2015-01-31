@@ -192,10 +192,15 @@ Return 0, czyli zwróć 0 mówi programowi żeby zakończył swoje działanie.</
 <p>3. Konsoliduje się kod wynikowy z dodatkowymi zasobami. Na przykład z bibliotekami. Konsolidacja polega na łączeniu własnego kodu wynikowego z kodem wynikowym używanych funkcji (tych poleceń z bibliotek) oraz dodatkowym kodem startowym, który pozwala nasz program w ogóle uruchomić.
 Plik zawierający efekt końcowy to tak zwany kod wykonalny.</p>
 
-<blockquote>Niejednokrotnie powtarzałem, że materiały ówcześniej przerobione oraz przyswojone z gimnazjum pozwolą wam na wykonanie poniższych zadań, a jeżeli nie: i tu już pomi... krótki koleś z ciebie!</blockquote>
+<h2 class="section-heading">Dodatek</h2>
 
-<h2 class="section-heading">Zadania:</h2>
+<p>Wielu z was ma problem z pisaniem zmiennych w prawidłowym miejscu :)
+Na razie każda zmienna powinna znajdować się w ciele funkcji, to znaczy między nawiasami { i }, inaczej zostanie zmienną globalną czego byśmy nie chcieli. Więcej o zmiennych globalnych dowiemy się podczas nauki o funkcjach. Na tę chwilę niech wszyscy używają zmiennych lokalnych.</p>
+
+<h2 class="section-heading">Zadania</h2>
 
 <p class="lowmar">1. Napisz program, który prosi użytkownika o wprowadzenie wieku, a następnie wyświetla wiek użytkownika podany w miesiącach.</p>
 
 <p>2. Napisz program, który prosi użytkownika o podanie liczby godzin i minut, po czym wyświetla je w formie: "Czas: godzina:minuty", czyli np. "Czas: 23:56". </p>
+
+<blockquote>Niejednokrotnie powtarzałem, że materiały ówcześniej przerobione oraz przyswojone z gimnazjum pozwolą wam na wykonanie poniższych zadań, a jeżeli nie: i tu już pomi... krótki koleś z ciebie!</blockquote>

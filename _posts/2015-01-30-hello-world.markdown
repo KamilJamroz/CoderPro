@@ -14,7 +14,6 @@ header-img: "img/post-bg-01.jpg"
 Każdy poprawnie napisany program w C będzie jednocześnie poprawnym programem języka C++, czyli C jest podzbiorem C++. Bla Bla Bla</p>
 
 
-
 Tak, wiem że każdy z was chciałby po tygodniu robić własne Wiedźminy, jednak zanim zaczniemy tworzyć takie cuda, musimy zająć się tym:
 
 <pre class="colorx">
@@ -31,7 +30,6 @@ int main()
 </code>
 </pre>
 
-
 Niestety, zanim przejdziemy do bardziej skomplikowanych struktur, musimy zrozumieć co właściwie dzieje się nieco wyżej.
 
 <h2 class="section-heading">&#35;include</h2>
@@ -43,7 +41,6 @@ Przydatna biblioteka, co?
 Właśnie, to jest polecenie wczytujące bibliotekę, czyli zbiór poleceń.
 Dzięki temu my nie musimy pisać paruset linijek kodu. Oczywiście isnieje więcej bibliotek, nauczymy się nawet pisać włane. </p>
 
-
 <h2 class="section-heading">using namespace std;</h2>
 
 <p class="lowmar">Using namespace std oznacza "używanie przestrzeni nazw std"
@@ -51,28 +48,28 @@ Każde polecenie znajduje się w danej przestrzeni nazw. Po co i co to jest?
 Jeżeli programista Hankiewicz chciałby napisać sobie polecenie "zrobmidobrze" i w tym samym momencie drugi programista zrobiłby takie samo, a oba wczytalibyśmy z bibliotek, program nie miałby pojęcia, o które polecenie nam chodzi. Dlatego powstały przestrzenie nazw. Od teraz możemy napisać:</p>
 
 <pre>
-hankiewicz::zrobmidobrze
-programista2::zrobmidobrze
+programista1::jakasfunkcja
+programista2::jakasfunkcja
 </pre>
 
 <p class="lowmar">Dzięki temu program się nie pogubi. No dobrze, ale po co to using namespace? Jeżeli wiemy, że w namym programie nie będziemy używać dwóch jednakowych zestawów poleceń możemy ustawić jedną przestrzeń:</p>
 
-<pre>using namespace hankiewicz;</pre>
+<pre>using namespace programista1;</pre>
 
 <p class="lowmar">I od teraz nie musimy pisać za każdym razem:</p>
 
 <pre>
-hankiewicz::zrobmidobrze
-hankiewicz::otak
-hankiewicz::funkcja3
-hankiewicz::siema
+programista1::obliczpierwiastek
+programista1::superpolecenie
+programista1::funkcja3
+programista1::siema
 </pre>
 
 <p class="lowmar">tylko możemy zrobić tak:</p>
 
 <pre>
-zrobmidobrze
-otak
+obliczpierwiastek
+superpolecenie
 funkcja3
 siema
 </pre>
@@ -81,7 +78,6 @@ siema
 Pomyślcie ile właśnie zaoszczędziliście czasu.
 Oczywiście w ogromnych projektach może to stanowić problem, dlatego możemy również ustawić przestrzeń nie dla wszystkich poleceń hankiewicza, ale tylko dla jednego:
 </p>
-
 
 <pre>
 using std::cout;
@@ -101,10 +97,10 @@ cout << "2+8";                            <span class="output">2+8</span>
 cout << 2+8;                              <span class="output">10</span>
 </pre>
 
-<p>Tak! c++ potrafi liczyć. Wszystko zawarte w cudzysłowiach jest liczone jako tekst.
+<p>Tak! W C++ możemy dodawać, odejmować, mnożyć, dzielić, używać nawiasów do wymuszania pierwszeństwa działania. Jeżeli chcielibyśmy użyć bardziej zaawansowanych form matematycznych takich jak pierwiastki czy logarytmy wystarczy wczytać bibliotekę math.c. Wszystko zawarte w cudzysłowiach jest uznawane za tekst.
 Teraz wprowadźmy zmienne.
 
-<h3><i>Zmienna</i></h3> to nic innego jak pojemnik na dane. Każda zmienna ma swój rodzaj: może to być tekst, liczba całkowita, liczba zmiennoprzecinkowa, znak.
+<b>Zmienna</b> to nic innego jak pojemnik na dane. Każda zmienna ma swój rodzaj: może to być tekst, liczba całkowita, liczba zmiennoprzecinkowa, znak.
 Jak możemy powiedzieć jakiego rodzaju jest zmienna? A oto mała tabelka do wkłucia:
 </p>
 
@@ -116,13 +112,13 @@ float  - liczba zmiennoprzecinkowa<br>
 char   - znak<br>
 string - łańcuch znaków, czyli tekst</p>
 
-<p class="lowmar">Teraz do dzieła. Zrobimy zmienną o nazwie liczba przechowującą liczbę całkowitą 230: <br>
+<p class="lowmar">A teraz stwórzmy zmienną o nazwie liczba przechowującą liczbę całkowitą 230:</p>
 
 <pre>
   int liczba = 230;
 </pre>
 
-<p class="lowmar">A teraz wyświetlimy ją na ekranie za pomocą polecenia cout:</p>
+<p class="lowmar">Wyświetlijmy ją na ekranie za pomocą polecenia cout:</p>
 
 <pre>
   cout << liczba;                   <span class="output">230</span>
@@ -148,19 +144,27 @@ Po zadeklarowaniu (stworzeniu i nadaniu wartości) zmiennej już nie będziemy m
 </pre>
 </p>
 
-<p class="lowmar">A teraz połączmy strumienie (tak, to co braliśmy na linuxie!) i dodajmy endl, czyli end of line:</p>
+<p class="lowmar">A teraz połączmy strumienie (tak, to co braliśmy na linuxie!) i dodajmy <b>endl</b>, czyli zakończenie linii (end line):</p>
 
 <pre class="midmar">
   string imie = "";
-  cin >> imie;                   <span class="output">przyjmijmy, że wpisuje Grzybiarz</span>
+  cin >> imie;                   <span class="output">przyjmijmy, że wpisuje Kasia</span>
   cout << "Witaj " << imie << "." << endl << "Pierogi.";
 </pre>
 
-Rezultat:
+<p>Rezultat:</p>
 
 <pre>
-  Witaj Grzybiarz.
+  Witaj Kasia.
   Pierogi.
+</pre>
+
+<p>Podobny efekt możemy uzyskać za pomocą <b>\n</b>:</p>
+
+<pre class="midmar">
+  string imie = "";
+  cin >> imie;                   <span class="output">przyjmijmy, że wpisuje Kasia</span>
+  cout << "Witaj " << imie << ".\nPirogi.";
 </pre>
 
 <h2 class="section-heading">Funkcja Main()</h2>
@@ -169,7 +173,7 @@ Rezultat:
 
 Każdy program rozpoczyna swoje działanie od funkcji main().
 W jej środku znajdują się wszystkie instrukcje.
-Return 0, czyli zwróć 0 mówi tej funkcji (czyli też programowi) żeby zakończya swoje działanie.</p>
+Return 0, czyli zwróć 0 mówi programowi żeby zakończył swoje działanie.</p>
 
 <pre>
   int main()
@@ -179,9 +183,6 @@ Return 0, czyli zwróć 0 mówi tej funkcji (czyli też programowi) żeby zakoń
   }
 </pre>
 
-
-
-
 <h2 class="section-heading">Mechanika Tworzenia Programu</h2>
 
 <p>Załóżmy, że napisaliśmy ten kod. Jak mamy go uruchomić?</p>
@@ -190,7 +191,7 @@ Return 0, czyli zwróć 0 mówi tej funkcji (czyli też programowi) żeby zakoń
 <p>3. Konsoliduje się kod wynikowy z dodatkowymi zasobami. Na przykład z bibliotekami. Konsolidacja polega na łączeniu własnego kodu wynikowego z kodem wynikowym używanych funkcji (tych poleceń z bibliotek) oraz dodatkowym kodem startowym, który pozwala nasz program w ogóle uruchomić.
 Plik zawierający efekt końcowy to tak zwany kod wykonalny.</p>
 
-<blockquote>Niejednokrotnie powtarzałem, że materiały uwcześniej przerobione oraz przyswojone z gimnazjum pozwolą wam na wykonanie poniższych zadań, a jeżeli nie: i tu już pomi... krótki koleś z ciebie!</blockquote>
+<blockquote>Niejednokrotnie powtarzałem, że materiały ówcześniej przerobione oraz przyswojone z gimnazjum pozwolą wam na wykonanie poniższych zadań, a jeżeli nie: i tu już pomi... krótki koleś z ciebie!</blockquote>
 
 <h2 class="section-heading">Zadania:</h2>
 

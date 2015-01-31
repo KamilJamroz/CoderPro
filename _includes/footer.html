@@ -76,16 +76,16 @@ function displayTime() {
   if(m <= 9) m = '0'+m;
   if(s <= 9) s = '0'+s;
 
-  color = "#"+s+m+s;
+  color = "#"+h+m+s;
   //set background color
   document.querySelector("#jscolor").style.backgroundColor = color;
 
   //retrigger the function every second
-  setTimeout(displayTime, 500);
+  setTimeout(displayTime, 50);
 }
 
 
 //call the function
 displayTime();
-setTimeout(displayTime, 500);
+setTimeout(displayTime, 50);
 </script>

@@ -129,7 +129,7 @@ hr.small {
 }
 .intro-header {
   background: no-repeat center center;
-  background-blend-mode: screen;
+  background-blend-mode: soft-light;
   background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;

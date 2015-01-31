@@ -152,19 +152,19 @@ Po zadeklarowaniu (stworzeniu i nadaniu wartości) zmiennej już nie będziemy m
   cout << "Witaj " << imie << "." << endl << "Pierogi.";
 </pre>
 
-<p>Rezultat:</p>
+<p class="lowmar">Rezultat:</p>
 
 <pre>
   Witaj Kasia.
   Pierogi.
 </pre>
 
-<p>Podobny efekt możemy uzyskać za pomocą <b>\n</b>:</p>
+<p class="lowmar">Podobny efekt możemy uzyskać za pomocą <b>\n</b>:</p>
 
 <pre class="midmar">
   string imie = "";
   cin >> imie;                   <span class="output">przyjmijmy, że wpisuje Kasia</span>
-  cout << "Witaj " << imie << ".\nPirogi.";
+  cout << "Witaj " << imie << ".\nPierogi.";
 </pre>
 
 <h2 class="section-heading">Funkcja Main()</h2>

@@ -194,8 +194,8 @@ Plik zawierający efekt końcowy to tak zwany kod wykonalny.</p>
 
 <h2 class="section-heading">Dodatek</h2>
 
-<p>Wielu z was ma problem z pisaniem zmiennych w prawidłowym miejscu :)
-Na razie każda zmienna powinna znajdować się w ciele funkcji, to znaczy między nawiasami { i }, inaczej zostanie zmienną globalną czego byśmy nie chcieli. Więcej o zmiennych globalnych dowiemy się podczas nauki o funkcjach. Na tę chwilę niech wszyscy używają zmiennych lokalnych.</p>
+<p>Wielu z was ma problem z pisaniem zmiennych w prawidłowym miejscu.
+Na razie każda zmienna powinna znajdować się w ciele funkcji, to znaczy między nawiasami { i }, inaczej zostanie zmienną globalną, czego byśmy sobie nie życzyli. Więcej o zmiennych globalnych dowiemy się podczas nauki o funkcjach. Na tę chwilę używajcie zmiennych lokalnych.</p>
 
 <h2 class="section-heading">Zadania</h2>
 

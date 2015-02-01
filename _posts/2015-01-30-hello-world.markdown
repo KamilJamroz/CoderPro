@@ -149,7 +149,7 @@ Po zadeklarowaniu (stworzeniu i nadaniu wartości) zmiennej już nie będziemy m
 
 <pre class="midmar">
   string imie = "";
-  cin >> imie;                   <span class="output">przyjmijmy, że wpisuje Kasia</span>
+  cin >> imie;                   <span class="output">Kasia</span>
   cout << "Witaj " << imie << "." << endl << "Pierogi.";
 </pre>
 

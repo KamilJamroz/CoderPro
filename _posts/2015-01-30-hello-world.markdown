@@ -11,7 +11,7 @@ header-img: "img/post-bg-01.jpg"
 
 
 <p class="midmar">Jednym z powodów uczenia się C++ jest chęć opanowania jego możliwości obiektowych. Jednak do tego potrzebne są podstawy języka C, gdyż z niego pochodzą typy podstawowe, operatory i duża część składni.
-Każdy poprawnie napisany program w C będzie jednocześnie poprawnym programem języka C++, czyli C jest podzbiorem C++. Bla Bla Bla</p>
+Każdy poprawnie napisany program w C będzie jednocześnie poprawnym programem języka C++, czyli C jest podzbiorem C++. Bla Bla Blah</p>
 
 
 <p class="midmar">Tak, wiem że każdy z was chciałby po tygodniu robić własne Wiedźminy, jednak zanim zaczniemy tworzyć takie cuda, musimy zająć się tym:</p>
@@ -35,9 +35,9 @@ Niestety zanim przejdziemy do bardziej skomplikowanych struktur musimy zrozumie�
 <h2 class="section-heading">&#35;include</h2>
 
 <p>&#35;include to dyrektywa preprocesora, a po polsku: include znaczy "zawierać", "io" to skrót od "input", "output", a stream to "strumień".
-Łącząc wszystko w jedną całość uzyskamy coś w rodzaju "Zawrzyj strumień wejścia i wyjścia"
+Łącząc wszystko w jedną całość uzyskamy coś w rodzaju "załącz strumień wejścia i wyjścia"
 Oznacza to, że kiedy program zacznie się kompilować właśnie w tym miejscu pojawi się kod, który pozwoli komputerowi kontaktować się z użytkownikiem. Jeżeli wpiszemy coś do konsoli, komputr będzie mógł to odczytać (wejście) i zwrócić nam jakąś informację (wyjście).
-Przydatna biblioteka, co?
+Przydatna biblioteka, prawda?
 Właśnie, to jest polecenie wczytujące bibliotekę, czyli zbiór poleceń.
 Dzięki temu my nie musimy pisać paruset linijek kodu. Oczywiście isnieje więcej bibliotek, nauczymy się nawet pisać włane. </p>
 
@@ -201,6 +201,6 @@ Na razie każda zmienna powinna znajdować się w ciele funkcji, to znaczy międ
 
 <p class="lowmar">1. Napisz program, który prosi użytkownika o wprowadzenie wieku, a następnie wyświetla wiek użytkownika podany w miesiącach.</p>
 
-<p>2. Napisz program, który prosi użytkownika o podanie liczby godzin i minut, po czym wyświetla je w formie: "Czas: godzina:minuty", czyli np. "Czas: 23:56". </p>
+<p>2. Napisz program, który prosi użytkownika o podanie liczby godzin i minut, po czym wyświetla je w formie: "Czas: godzina:minuty". Przykład: "Czas: 23:56". </p>
 
 <blockquote>Niejednokrotnie powtarzałem, że materiały ówcześniej przerobione oraz przyswojone z gimnazjum pozwolą wam na wykonanie poniższych zadań, a jeżeli nie: i tu już pomi... krótki koleś z ciebie!</blockquote>

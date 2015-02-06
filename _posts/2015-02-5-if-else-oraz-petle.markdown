@@ -107,7 +107,7 @@ else
 <p class="midmar">Na początku powinniśmy poznać operacje porównania:</p>
 
 <table><tbody><tr><th>Operator</th><th>Krótki opis</th></tr><tr><td>&gt;</td><td>... jest większe od ...</td></tr><tr><td>&gt;=</td><td>... jest większe lub równe niż ...</td></tr><tr><td>&lt;</td><td>... jest mniejsze od ...</td></tr><tr><td>&lt;=</td><td>... jest mniejsze lub równe niż ...</td></tr><tr><td>==</td><td>... jest równe ...</td></tr><tr><td>!=</td><td>... jest różne od ...</td></tr></tbody></table>
-<table><tbody><tr><th><p class="null">Nie mylić znaku '=' ze znakiem '=='! Ten pierwszy jest znakiem przypisania wartości!</p></th></tr><th class="red"></th></tbody></table>
+<table><tbody><tr><th><p class="null">Nie mylić znaku '=' ze znakiem '=='! Ten pierwszy to przypisanie wartości!</p></th></tr><th class="red"></th></tbody></table>
 
 <h2 class="section-heading">Operacje Logiczne</h2>
 

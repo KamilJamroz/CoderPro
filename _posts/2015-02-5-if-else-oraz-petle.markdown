@@ -2,7 +2,7 @@
 layout:     post
 title:      "Zapętlona Logika"
 subtitle:   "If...else, pętle i coś jeszcze."
-date:       2015-02-05 02:00:00
+date:       2015-02-06 18:25:00
 author:     "Mrozo"
 header-img: "img/post-bg-02.jpg"
 ---

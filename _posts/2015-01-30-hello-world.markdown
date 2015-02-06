@@ -97,7 +97,7 @@ cout << "2+8";                            <span class="output">2+8</span>
 cout << 2+8;                              <span class="output">10</span>
 </pre>
 
-<p>Tak! W C++ możemy dodawać, odejmować, mnożyć, dzielić, używać nawiasów do wymuszania pierwszeństwa działania. Jeżeli chcielibyśmy użyć bardziej zaawansowanych form matematycznych takich jak pierwiastki czy logarytmy wystarczy wczytać bibliotekę math.c. Wszystko zawarte w cudzysłowiach jest uznawane za tekst.
+<p>Tak! W C++ możemy dodawać, odejmować, mnożyć, dzielić, używać nawiasów do wymuszania pierwszeństwa działania. Jeżeli chcielibyśmy użyć bardziej zaawansowanych form matematycznych takich jak pierwiastki czy logarytmy wystarczy wczytać bibliotekę math.h. Wszystko zawarte w cudzysłowiach jest uznawane za tekst.
 Teraz wprowadźmy zmienne.
 
 <b>Zmienna</b> to nic innego jak pojemnik na dane. Każda zmienna ma swój rodzaj: może to być tekst, liczba całkowita, liczba zmiennoprzecinkowa, znak.
@@ -112,6 +112,7 @@ int    - liczba całkowia<br>
 float  - liczba zmiennoprzecinkowa<br>
 char   - znak<br>
 string - łańcuch znaków, czyli tekst</p>
+bool - prawda albo fałsz</p>
 
 <p class="lowmar">Stwórzmy zmienną o nazwie liczba przechowującą liczbę całkowitą 230:</p>
 

@@ -42,6 +42,18 @@ p
   margin-bottom: 30px;
 }
 
+.nullmar
+{
+  margin-bottom: 0px;
+}
+
+.null
+{
+  margin:5px 0 0 0;
+  padding: 0;
+  color: rgba(95, 95, 95, 0.78);
+}
+
 .output
 {
   color:rgba(15, 86, 139, 0.83);
@@ -52,6 +64,23 @@ p
   color:#21232e;
   margin-top: 30px;
   margin-bottom: 40px;
+}
+
+.red
+{
+  background: rgba(255, 0, 69, 0.80);
+  transition: all .3s ease-in-out;
+}
+
+.green
+{
+  background: rgba(137, 255, 0, 0.80);
+  transition: all .3s ease-in-out;
+}
+
+.orange
+{
+  color: #EC7111;
 }
 
 /* EXPERIMENT */

@@ -131,7 +131,7 @@ else if(wiek < 18)
 else
   cout << "Ale jesteś stary!";</code></pre>
 
-<table><tbody><tr><th><p class="null">Pamiętajce, że w c++ nie używamy znaków polskich! Przynajmniej do czasu :)</p></th></tr><th class="red"></th></tbody></table>
+<table><tbody><tr><th><p class="null">Pamiętaj, że w c++ nie używamy znaków polskich! Przynajmniej do czasu :)</p></th></tr><th class="red"></th></tbody></table>
 
 <p class="lowmar">Przykład 2:</p>
 

@@ -8,7 +8,7 @@ header-img: "img/post-bg-02.jpg"
 ---
 
 <h2 class="section-heading toph">Wstęp</h2>
-<p> Ta lekcja będzie zawierała o wiele więcej niezbędnych rzeczy, które mogą być na początku nie do ogarnięcia. Jednak już po przerobieniu dzisiejszego materiału wkońcu będziesz potrafił stworzyć coś normalnego i praktycznego, więc siedź cicho i uczc się :P</p>
+<p> Ta lekcja będzie zawierała o wiele więcej niezbędnych rzeczy, które mogą być na początku nie do ogarnięcia. Jednak już po przerobieniu dzisiejszego materiału wkońcu będziesz potrafił stworzyć coś normalnego i praktycznego, więc siedź cicho i uczć się :P</p>
 
 <h2 class="section-heading">Komentarze</h2>
 <p class="lowmar">W każdym temacie mam zamiar wtrącać coś dodatkowego i dzisiaj będą to komentarze, czyli tekst, którego kompilator nie widzi. Dzięki temu możemy opisywać co dzieje się w naszym kodzie. Bardzo powszechną praktyką jest pisanie komentarzy opisujących co dokłanie ma robić dana funkcja. Jednak o funkcjach kiedy indziej.</p>

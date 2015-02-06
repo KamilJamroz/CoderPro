@@ -8,7 +8,7 @@ header-img: "img/post-bg-02.jpg"
 ---
 
 <h2 class="section-heading toph">Wstęp</h2>
-<p> Ta lekcja będzie zawierała o wiele więcej niezbędnych rzeczy, które mogą być na początku nie do ogarnięcia. Jednak już po przerobieniu dzisiejszego materiału będziecie potrafili w końcu stworzyć coś normalnego i praktycznego, więc siedzcie cicho i uczcie się :P</p>
+<p> Ta lekcja będzie zawierała o wiele więcej niezbędnych rzeczy, które mogą być na początku nie do ogarnięcia. Jednak już po przerobieniu dzisiejszego materiału wkońcu będziesz potrafił stworzyć coś normalnego i praktycznego, więc siedź cicho i uczc się :P</p>
 
 <h2 class="section-heading">Komentarze</h2>
 <p class="lowmar">W każdym temacie mam zamiar wtrącać coś dodatkowego i dzisiaj będą to komentarze, czyli tekst, którego kompilator nie widzi. Dzięki temu możemy opisywać co dzieje się w naszym kodzie. Bardzo powszechną praktyką jest pisanie komentarzy opisujących co dokłanie ma robić dana funkcja. Jednak o funkcjach kiedy indziej.</p>
@@ -209,5 +209,5 @@ Już nie mam pieniędzy :(</code></pre>
 
 <p class="lowmar">2. Stwórz program, który będzie wyświetlał wszystkie liczby parzyste w zakresie od 0 do 1000 włącznie. (I nawet nie próbuj zrobić to samymi cout-ami :D) </p>
 
-<p>3. Napisz kalkulator (nie przesłyszeliście się), który będzie potrafił dodawać, odejmować, mnożyć i dzielić. Wskazówka: stwórz menu, w którym będzie można wybrać jedną z 5 opcji: np 1 to dodawanie, 2 to odejmowanie itd. (0 to wyjście z programu, bez zera menu po wystawieniu poprzedniego wyniku ma się znowu pojawić!) Następnie podajemy a, enter, b, enter i program podaje wynik. (uff ale wam podpowiedziałem :D. Teraz zrobicie to w 20 sekund)
+<p>3. Napisz kalkulator (nie przesłyszałeś się), który będzie potrafił dodawać, odejmować, mnożyć i dzielić. Wskazówka: stwórz menu, w którym będzie można wybrać jedną z 5 opcji: np 1 to dodawanie, 2 to odejmowanie itd. (0 to wyjście z programu, bez zera menu po wystawieniu poprzedniego wyniku ma się znowu pojawić!) Następnie wprowadzamy a, enter, b, enter i program podaje wynik. (uff ale ci podpowiedziałem :D. Teraz pewnie zrobisz to w 20 sekund)
 <blockquote>Oczywiśnie nic nie stai na przeszkodzie aby zrobić pętlę w pętli w pętli. Dodajmy jeszcze if elsa i tadaa! Wasze zadanie domowe gotowe ;)</blockquote>

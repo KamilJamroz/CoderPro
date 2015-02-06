@@ -207,7 +207,7 @@ Już nie mam pieniędzy :(</code></pre>
 
 <p class="lowmar">1. W moim przykładzie z pętlą while znajduje się błąd. Po pokazaniu informacji "mam 0 pieniędzy" pokazuje się kolejna: "Wydałem 20 pieniędzy". Odtwórz ten program i popraw go używając if-a.</p>
 
-<p class="lowmar">2. Stwórz program, który będzie wyświetlał wsystkie liczby parzyste w zakresie od 0 do 1000 włącznie. (I nawet nie próbuj zrobić to samymi cout-ami :D) </p>
+<p class="lowmar">2. Stwórz program, który będzie wyświetlał wszystkie liczby parzyste w zakresie od 0 do 1000 włącznie. (I nawet nie próbuj zrobić to samymi cout-ami :D) </p>
 
 <p>3. Napisz kalkulator (nie przesłyszeliście się), który będzie potrafił dodawać, odejmować, mnożyć i dzielić. Wskazówka: stwórz menu, w którym będzie można wybrać jedną z 5 opcji: np 1 to dodawanie, 2 to odejmowanie itd. (0 to wyjście z programu, bez zera menu po wystawieniu poprzedniego wyniku ma się znowu pojawić!) Następnie podajemy a, enter, b, enter i program podaje wynik. (uff ale wam podpowiedziałem :D. Teraz zrobicie to w 20 sekund)
 <blockquote>Oczywiśnie nic nie stai na przeszkodzie aby zrobić pętlę w pętli w pętli. Dodajmy jeszcze if elsa i tadaa! Wasze zadanie domowe gotowe ;)</blockquote>

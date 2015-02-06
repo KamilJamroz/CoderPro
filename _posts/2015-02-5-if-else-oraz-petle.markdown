@@ -11,9 +11,9 @@ header-img: "img/post-bg-02.jpg"
 <p> Ta lekcja będzie zawierała o wiele więcej niezbędnych rzeczy, które mogą być na początku nie do ogarnięcia. Jednak już po przerobieniu dzisiejszego materiału będziecie potrafili w końcu stworzyć coś normalnego i praktycznego, więc siedzcie cicho i uczcie się :P</p>
 
 <h2 class="section-heading">Komentarze</h2>
-<p class="lowmar">W każdym temacie mam zamiar wtrącać coś dodatkowego i dzisiaj będą to komentarze, czyli tekst, którego kompilator nie widzi, a my dzięki temu możemy opisywać co dzieje się w naszym kodzie. Bardzo powszechną praktyką jest pisanie komentarzy opisujących co dokłanie ma robić dana funkcja, jednak o funkcjach kiedy indziej.</p>
+<p class="lowmar">W każdym temacie mam zamiar wtrącać coś dodatkowego i dzisiaj będą to komentarze, czyli tekst, którego kompilator nie widzi. Dzięki temu możemy opisywać co dzieje się w naszym kodzie. Bardzo powszechną praktyką jest pisanie komentarzy opisujących co dokłanie ma robić dana funkcja. Jednak o funkcjach kiedy indziej.</p>
 
-<p class="midmar">Mamy 2 rodzaje komentarzy: jednoliniowe oraz wieloliniowe:</p>
+<p class="midmar">Mamy 2 rodzaje komentarzy: jednoliniowe oraz wieloliniowe</p>
 
 <pre class="colorx">
 <code class="c++">
@@ -47,7 +47,7 @@ int main()
 }
 </pre>
 
-<p class="lowmar">Budowa If Else:</p>
+<p class="lowmar">Budowa If...Else:</p>
 
 <pre>If(warunek)
 {
@@ -201,7 +201,7 @@ Już nie mam pieniędzy :(</code></pre>
   cin >> wybor;
 }while(wybor==1)</code></pre>
 
-<p>Jak widać pętla ta przydaje się podczas robienia np. menu. Zanim wprowadzimy dane pętla wykonuje się przynajmniej raz. Jeżeli wybor będzie równał się 0, wyjdziemy z pętli i nasza gra zakończy się, w przeciwnym wypadku zostanie powtórzona.</p>
+<p>Jak widać pętla ta przydaje się podczas robienia np. menu. Zanim wprowadzimy dane pętla wykonuje się przynajmniej jeden raz. Jeżeli wybor będzie równał się 0, wyjdziemy z pętli i nasza gra zakończy się, w przeciwnym wypadku zostanie powtórzona.</p>
 
 <h2 class="section-heading">Zadania</h2>
 

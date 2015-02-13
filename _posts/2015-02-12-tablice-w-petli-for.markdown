@@ -33,13 +33,13 @@ int liczba5 = 30;
 Nic prostszego:</p>
 
 <pre class="colorx nullmar">
-<code class="c++">//chcę zapisać wartość w pierwszej liczbie:
+<code class="c++">//chcę zapisać wartość w pierwszej komórce:
 liczba[0] = 10;
-//chcę zapisać wartość w drugiej liczbie:
+//chcę zapisać wartość w drugiej komórki:
 liczba[1] = 15;
-//chcę odczytać wartość z 150 liczby:
+//chcę odczytać wartość z 150 komórki:
 cout << liczba[149];
-//ostatnia, dwusetna liczba to:
+//ostatnia, dwusetna komórka to:
 liczba[199]</code></pre>
 
 

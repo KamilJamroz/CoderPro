@@ -35,7 +35,7 @@ Nic prostszego:</p>
 <pre class="colorx nullmar">
 <code class="c++">//chcę zapisać wartość w pierwszej komórce:
 liczba[0] = 10;
-//chcę zapisać wartość w drugiej komórki:
+//chcę zapisać wartość w drugiej komórce:
 liczba[1] = 15;
 //chcę odczytać wartość z 150 komórki:
 cout << liczba[149];
@@ -46,7 +46,7 @@ liczba[199]</code></pre>
 <table><tbody><tr><th><p class="null">Pamiętaj, że w tablicy zawsze liczymy elementy od 0!</p></th></tr><th class="red"></th></tbody></table>
 
 
-<p class="lowmar">w miejsce liczby możemy wpisać zmienną czy wykonać przeróżne obliczenia:</p>
+<p class="lowmar">w miejsce liczby możemy wpisać zmienną lub wykonać przeróżne obliczenia:</p>
 
 <pre class="colorx"><code class="c++">int x = 2;
 liczba[x] = 10;
@@ -76,7 +76,7 @@ while(i<10)
 <th class="green"></th>
 </tbody></table>
 
-<p class="lowmar">W pętli for dokładnie to samo możemy zrobić tak:</p>
+<p class="lowmar">Pętla for powstała po to, aby nie deklarować niepotrzebnie zmiennej, której użyjemy tylko do określenia ilości powtórzeń kodu. </p>
 
 <pre class="colorx"><code class="c++">for(int i=0; i<10; i++)
 {
@@ -84,12 +84,12 @@ while(i<10)
   x = x+1;
 }</code></pre>
 
-<p class="lowmar">Wszystkie pętle są do siebie bardzo podobne, ta posiada wbudowany iterator. Iterator to zmienna, która decyduje ile razy powtórzy (ziteruje) się pętla. To właśnie od tego wzięła się nazwa zmiennej "i". W miejsce i++ możemy wykonywać inne działąnia np i += 5. </p>
+<p class="lowmar">Wszystkie pętle są do siebie bardzo podobne, ta posiada wbudowany iterator. Iterator to zmienna, która decyduje ile razy powtórzy (ziteruje) się pętla. To właśnie od niego wzięła się nazwa zmiennej "i". W miejsce i++ możemy wykonywać inne działąnia np i += 5. </p>
 
 <p class="lowmar">Teraz możemy w pełni zautomatyzować np wpisywanie wartości do tablicy:</p>
 
 <pre class="colorx"><code class="c++">int liczba[200];
-for(int i=0; i<200; i=i+1)
+for(int i=0; i<200; i++)
 {
   cout << "Liczba" << i+1 << ":";
   cin >> liczba[i];

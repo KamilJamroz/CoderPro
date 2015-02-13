@@ -84,7 +84,7 @@ while(i<10)
   x = x+1;
 }</code></pre>
 
-<p class="lowmar">Wszystkie pętle są do siebie bardzo podobne, ta posiada wbudowany iterator. Iterator to zmienna, która decyduje ile razy powtórzy (ziteruje) się pętla. To właśnie od tego wzięła się nazwa zmiennej "i". </p>
+<p class="lowmar">Wszystkie pętle są do siebie bardzo podobne, ta posiada wbudowany iterator. Iterator to zmienna, która decyduje ile razy powtórzy (ziteruje) się pętla. To właśnie od tego wzięła się nazwa zmiennej "i". W miejsce i++ możemy wykonywać inne działąnia np i += 5. </p>
 
 <p class="lowmar">Teraz możemy w pełni zautomatyzować np wpisywanie wartości do tablicy:</p>
 

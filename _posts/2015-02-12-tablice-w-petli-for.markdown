@@ -46,10 +46,11 @@ liczba[199]</code></pre>
 <table><tbody><tr><th><p class="null">Pamiętaj, że w tablicy zawsze liczymy elementy od 0!</p></th></tr><th class="red"></th></tbody></table>
 
 
-<p class="lowmar">w miejsce liczby możemy wpisać zmienną:</p>
+<p class="lowmar">w miejsce liczby możemy wpisać zmienną czy wykonać przeróżne obliczenia:</p>
 
 <pre class="colorx"><code class="c++">int x = 2;
 liczba[x] = 10;
+liczba[x+1] = 15;
 cout << liczba[x];          //liczba[2]=10</code></pre>
 
 

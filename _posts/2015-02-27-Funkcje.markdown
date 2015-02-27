@@ -27,7 +27,7 @@ void helloWorld() </code></pre>
 
 <h2 class="section-heading">Funkcja Void</h2>
 
-<p class="midmar">Na początku zajmiemy się najprostszą funkcją, czyli taką, która nic nie zwraca żadnej wartości i nie posiada argumentów. Jeżeli funkcja nie zwraca wartości to co mamy wpisać w ich miejsce? Void, czyli po angielsku pustkę.</p>
+<p class="midmar">Na początku zajmiemy się najprostszą funkcją, czyli taką, która nie zwraca żadnej wartości i nie posiada argumentów. Jeżeli funkcja nie zwraca wartości to co mamy wpisać w ich miejsce? Void, czyli po angielsku pustkę.</p>
 
 <pre class="colorx"><code class="c++">void helloWorld()
 {

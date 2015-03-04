@@ -149,7 +149,7 @@ int main()
   return 0;
 }
 
-void pracownik(ink wyngiel, int kamulce, int zelastwo, int drywno)
+void pracownik(int wyngiel, int kamulce, int zelastwo, int drywno)
 {
   wyngiel -= 10;        // Węgiel maina wcale nie uległ zmienie!
   wyngiel += 10;        // Zmienna wegiel u szefa nadal wynosi 20!

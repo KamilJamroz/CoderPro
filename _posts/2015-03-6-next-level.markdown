@@ -1,13 +1,14 @@
 ---
 layout:     post
-title:      "Funkcje!"
-subtitle:   "W końcu."
-date:       2015-02-27 16:00:00
+title:      "Podstawy prawie za nami"
+subtitle:   "Switch case oraz łańcuchy znaków"
+
+date:       2015-03-06 21:00:00
 author:     "Mrozo"
 header-img: "img/post-bg-04.jpg"
 ---
 
-<h2 class="section-heading toph">Uproszczony Opis</h2>
+<h2 class="section-heading toph">Struktury</h2>
 
 <p>Wyobraźmy sobie, że jesteśmy prawilnymi programistami i tworzymy wspaniałą grę rpg. W grze tej mamy do wyboru 10 klas postaci. Każda z klas potrafi wykonać skok, rozmawiać, zadawać obrażenia, używać przedmiotów, craftować ekwiunek. Bez używania funkcji do każdej z klas będziemy musieli po kolei wkleić wszystkie te umiejętności, co oznacza 10 razy więcej kodu! To nic. Teraz okazało się, że podczas wykonywania skoku występuje jakiś błąd. Co robimy? Poprawiamy ten sam błąd w 10 różnych miejscach! A co z rozszerzaniem, ulepszaniem naszego systemu zadawania obrażeń? Znów będziemy zmuszeni zmieniać kod w wielu miejscach. Tragedia. A gdyby dało się ucisnąć 200 linijek kodu odpowiadających za 1 czynnąść pod podaną nazwą np. "Atak" a następnie wywołać samą nazwę w wielu miejscach? Teraz moglibyśmy modyfikować kod kryjący się pod słowem "Atak" tylko 1 raz, w 1 miejscu. Tak właśnie działają funkcje. </p>
 

@@ -71,7 +71,7 @@ int main()
 }
 </code></pre>
 
-<p class="lowmar">Takim sposobem przełamaliśmy się przez magiczną ścianę między 2 funkcjami. Funkcja "operacja" ma bezpośredni dostęp do zmiennej z funkcji main(). Obie funkcje operują na 1 adresie. Jakie są tego zalety? Bez tego tworzona jest kopia wysłanej zmiennej. A może tablicy? A tablica może być bardzo duża. Samo kopiowanie jej spowolniłoby program. Dlatego właśnie wymyślono referencję - przekazywanie przez adres, a nie przez wartość. W C++ wszystkie tablice są automatycznie przekazywane przez referencję.</p>
+<p class="lowmar">Takim sposobem przełamaliśmy się przez magiczną ścianę między 2 funkcjami. Funkcja "operacja" ma bezpośredni dostęp do zmiennej z funkcji main(). Obie funkcje operują na 1 adresie. Jakie są tego zalety? Bez tego tworzona jest kopia wysłanej zmiennej. A może tablicy? A tablica może być bardzo duża. Samo kopiowanie jej spowolniłoby program. Dlatego właśnie wymyślono referencję - przekazywanie przez adres, a nie przez wartość. W C++ wszystkie tablice są automatycznie przekazywane przez referencję, a my możemy korzystać z niej w przypadkach kiedy chcemy mieć coś "na żywo" udostępniane innym funkcją.</p>
 
 <p class="midmar">Jeszcze tylko krótszy sposób tego co zapisałem powyżej:</p>
 

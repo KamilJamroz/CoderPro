@@ -1,0 +1,92 @@
+---
+layout:     post
+title:      "Zmora C++"
+subtitle:   "Wskaźniki"
+
+date:       2015-03-06 20:30:00
+author:     "Mrozo"
+header-img: "img/post-bg-06.jpg"
+---
+
+<h2 class="section-heading toph">Wskaźnik?</h2>
+
+<p class="midmar">Dla wielu wskaźniki to najgorszy temat w całym C++. A teraz, jak już jesteście w pełni zmotywowani przedstawię wam je: *, &. Tak, to wszystko co będziesz musiał dzisiaj zrozumieć.</p>
+
+<h2 class="section-heading">& - To jest ampersand</h2>
+
+<p class="midmar">Jak wiesz wszystkie dane naszego programu siedzą w komórkach pamięci, których jest bardzo, bardzo dużo. Aby komórki można było odróżnić każda została obdarzona własnym, unikatowym adresem zapisanym w kodzie szesnastkowym. Ampersand potrafi wskazać nam adres komórki, w której siedzi zmienna. </p>
+
+<pre class="colorx"><code class="c++">int x = 0;
+cout << &x;</code></pre>
+
+<p>I tak oto uzyskaliśmy nasz adres.</p>
+
+<h2 class="section-heading">* - A to jest gwiazdka</h2>
+
+<p class="midmar">Gwiazdka odpowiada nam na takie pytanie: "Jaka jest zawartość komórki o adresie ...?". Ktoś inteligenty zauważy, że gwiazdka jest prawie jak odwrotność ampersanda. Ale chwila, przecież to jest totalnie bezużyteczne bo nie znamy adresów komórek naszej pamięci i nie planujemy co w nich może siedzieć. Teraz właśnie przyda nam się głowa:</p>
+
+<pre class="colorx midmar"><code class="c++">int x = 10;
+int *wsk; // deklaracja zmiennej wskaźnikowej
+wsk = &x; // przypisanie zmiennej adresu komórki, w której mieści się x
+cout << *wsk; // Jaka jest zawartość komórki o adresie &x? Oczywiście 10</code></pre>
+
+<p class="midmar">Niesamowite, właśnie za pomocą 2 zmiennych i dziwnych znaków wyświetliliśmy zawartość 1 zmiennej! Ale zauważcie, że wskaźnik można przestawiać: </p>
+
+<pre class="colorx midmar"><code class="c++">int x = 10;
+int y = 30;
+int *wsk;
+wsk = &x;
+cout << *wsk << endl;
+wsk = &y;
+cout << *wsk;</code></pre>
+
+<p class="midmar">A teraz zagadka:</p>
+
+<pre class="colorx midmar"><code class="c++">int x = 10;
+int y = 30;
+int *wsk;
+int *wsk2;
+wsk = &x;
+wsk2 = &y;
+cout << *&*&*wsk << endl;
+cout << &*&*wsk << endl;
+cout << &*&*&y << endl;
+cout << *&*&wsk2 << endl;</code></pre>
+
+<p>Jeżeli jesteś w stanie powiedzieć gdzie wyświetli się adres zmiennej, a gdzie jej wartość możesz być z siebie dumny. Pamiętaj, kartka i długopis nie gryzą. Wiedz również, że zmienna wskaźnikowa równiesz siedzi w jakiejś komórce z własnym adresem.</p>
+
+<h2 class="section-heading">Jak działa referencja</h2>
+
+<pre class="colorx midmar"><code class="c++">void operacja(int * zmienna) // zmienna wskaźnikowa wskazuje na adres x!
+{
+    *zmienna +=10;
+}
+
+int main()
+{
+    int x = 0;
+    operacja(&x); // do funkcji wysyłamy adres zmiennej x
+    cout << x << endl; //
+    return 0;
+}
+</code></pre>
+
+<p class="lowmar">Takim sposobem przełamaliśmy się przez magiczną ścianę między 2 funkcjami. Funkcja "operacja" ma bezpośredni dostęp do zmiennej z funkcji main(). Obie funkcje operują na 1 adresie. Jakie są tego zalety? Bez tego tworzona jest kopia wysłanej zmiennej. A może tablicy? A tablica może być bardzo duża. Samo kopiowanie jej spowolniłoby program. Dlatego właśnie wymyślono referencję - przekazywanie przez adres, a nie przez wartość. W C++ wszystkie tablice są automatycznie przekazywane przez referencję.</p>
+
+<p class="midmar">Jeszcze tylko krótszy sposób tego co zapisałem powyżej:</p>
+
+<pre class="colorx midmar"><code class="c++">void operacja(int &zmienna) // zmienna wskaźnikowa wskazuje na adres x!
+{
+    zmienna +=10;
+}
+
+int main()
+{
+    int x = 0;
+    operacja(x); // do funkcji wysyłamy adres zmiennej x
+    cout << x << endl; //
+    return 0;
+}
+</code></pre>
+
+<p>Wiem, że teraz może to nie pasować do roli ampersanda, ale to tylko specjalnie ustanowiony skrót na to, co zrobiłem nieco powyżej. Dodam jeszcze, że wskaźniki będą miały jeszcze znaczenie w polimorfiźmie, ogromnej zalecie programowania obiektowego, dlatego myślę, że już nigdy nie będziecie gadali "Po co te wskaźniki?!"</p>

@@ -66,7 +66,7 @@ int main()
 {
     int x = 0;
     operacja(&x); // do funkcji wysyłamy adres zmiennej x
-    cout << x << endl; //
+    cout << x << endl;
     return 0;
 }
 </code></pre>
@@ -75,7 +75,7 @@ int main()
 
 <p class="midmar">Jeszcze tylko krótszy sposób tego co zapisałem powyżej:</p>
 
-<pre class="colorx midmar"><code class="c++">void operacja(int &zmienna) // zmienna wskaźnikowa wskazuje na adres x!
+<pre class="colorx midmar"><code class="c++">void operacja(int &zmienna) // wszystko to samo w skróconej formie
 {
     zmienna +=10;
 }
@@ -83,8 +83,8 @@ int main()
 int main()
 {
     int x = 0;
-    operacja(x); // do funkcji wysyłamy adres zmiennej x
-    cout << x << endl; //
+    operacja(x);
+    cout << x << endl;
     return 0;
 }
 </code></pre>

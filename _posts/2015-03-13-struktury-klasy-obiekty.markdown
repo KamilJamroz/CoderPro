@@ -305,7 +305,7 @@ cout << "Imie: " << gracz1.getImie() << endl;</code></pre>
 
 <p class="lowmar">1. Pobaw się obiektowością. Zrób jakieś proste RPG z prymitywnym systmem walki, parę itemów itp.</p>
 
-<p class="lowmar">2. Zrób kalkulator redukujący funkcje trygonometryczne <br />
+<p class="lowmar">2. Zrób kalkulator redukujący funkcje trygonometryczne (obiektowo oczywiście) <br />
 Przykład:</p>
 <pre>sin(160) = sin(180-20) = cos(20)</pre>
 

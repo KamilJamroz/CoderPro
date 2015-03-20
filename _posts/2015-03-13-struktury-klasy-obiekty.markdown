@@ -27,7 +27,7 @@ Nie da się zrobić tego tablicą, ponieważ co wpiszemy w miejsce typu danych?<
 };
 </code></pre>
 
-<p class="midmar">Stworzyliśmy własny typ danych. Jak go użyć? Podobnie jak robimy to z typami int, double itd:</p>
+<p class="midmar">Stworzyliśmy własny typ danych.<br /> Jak go użyć? Podobnie jak robimy to z typami int, double itd:</p>
 
 <pre class="colorx midmar"><code class="c++">int main() {
 
@@ -40,7 +40,7 @@ Nie da się zrobić tego tablicą, ponieważ co wpiszemy w miejsce typu danych?<
   };
 }</code></pre>
 
-<p class="midmar">Udało nam się pogrupować różne typy danych w coś większego - strukturę. Ale teraz jak możemy dostać się do jej elementów? Za pomocą operatora kropki:</p>
+<p class="midmar">Udało nam się pogrupować różne typy danych w coś większego - strukturę.<br /> Jak możemy dostać się do jej elementów? Za pomocą operatora kropki:</p>
 
 <pre class="colorx midmar"><code class="c++">cout << "Imie: " << marek.imie << endl;
 cout << "Nazwisko: " << marek.nazwisko << endl;
@@ -55,11 +55,11 @@ Nazwisko: Nowak
 Wiek: 26
 Nowy wiek: 10</pre>
 
-<p>Struktury są bardzo przydatne i używa się ich naprawdę dużo w większych projektach. Musisz zauważyć jak bardzo mogą być pomocne. Używając ich zaoszczędzisz masę czasu, a twój kod będzie czytelniejszy.</p>
+<p>Struktury są bardzo przydatne i używa się ich naprawdę dużo w większych projektach. Musisz zauważyć jak bardzo mogą być pomocne.<br /> Używając ich zaoszczędzisz masę czasu, a twój kod będzie czytelniejszy.</p>
 
 <h2 class="section-heading">Od innej strony - Klasy i Obiekty</h2>
 
-<p class="midmar">Róża. Co stanęło ci przed oczami? Właściwości typu kolor, wysokość, wiek, zapach? Nie sądzę. Róża może mieś dziesiątki kolorów a my wyobrażamy sobie tylko jeden. Człowiek myśli obiektowo, to dlaczego nie miałby w taki sam sposób programować? W programowaniu obiektowym istnieją dwa podstawowe pojęcia: obiekt i klasa. <span class="blue">Klasa</span> róży to będzie zbiór wszystkich jej cech (ale nie określonych dokładnie) takich jak np zapach czy kolor. Innymi słowy klasa to taki przepis na róże, czym ona może się charakteryzować. <span class="blue">Obiekt</span> to coś, co powstało według klasy.</p>
+<p class="midmar">Róża. Co stanęło ci przed oczami? Właściwości typu kolor, wysokość, wiek, zapach? Nie sądzę. Róża może mieś dziesiątki kolorów a my wyobrażamy sobie tylko jeden. Człowiek myśli obiektowo, to dlaczego nie miałby w taki sam sposób programować?<br /> W programowaniu obiektowym istnieją dwa podstawowe pojęcia:<br /> <span class="blue">Klasa</span> róży to będzie zbiór wszystkich jej cech (ale nie określonych dokładnie) takich jak np zapach czy kolor. Innymi słowy klasa to taki przepis na róże, czym ona może się charakteryzować.<br /> <span class="blue">Obiekt</span> to coś, co powstało według klasy.</p>
 
 <pre class="colorx nullmar"><code class="c++">class Wojownik
 {

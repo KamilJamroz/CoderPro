@@ -55,7 +55,7 @@ Nazwisko: Nowak
 Wiek: 26
 Nowy wiek: 10</pre>
 
-<p>Struktury są bardzo przydatne i używa się ich naprawdę dużo w większych projektach. Musisz zauważyć jak bardzo mogą być pomocne.<br /> Używając ich zaoszczędzisz masę czasu, a twój kod będzie czytelniejszy.</p>
+<p>Struktury są bardzo przydatne i używa się ich naprawdę wiele w większych projektach. Musisz zauważyć jak bardzo mogą być pomocne.<br /> Używając ich zaoszczędzisz masę czasu, a twój kod będzie czytelniejszy.</p>
 
 <h2 class="section-heading">Od innej strony - Klasy i Obiekty</h2>
 

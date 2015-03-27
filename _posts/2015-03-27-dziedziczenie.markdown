@@ -10,7 +10,7 @@ header-img: "img/post-bg-08.jpg"
 
 <h2 class="section-heading toph">Dziedziczenie</h2>
 
-<p class="midmar">Często w naszych programach istnieją bardzo podobne klasy, które różnią się jedynie małymi szczegółami. Dla przykładu: klasa Wojownik, Mag i Łucznik. Wszyscy będą mieli podobne atrybuty takie jak życie, poziom, nazwa itp. W ten sposób powstanie nam masa klas posiadających w wielu miejscach dokładnie taki sam kod, czege byśmy nie chcieli. </p>
+<p class="midmar">Często w naszych programach istnieją bardzo podobne klasy, które różnią się jedynie małymi szczegółami. Dla przykładu: klasa Wojownik, Mag i Łucznik. Wszyscy będą mieli podobne atrybuty takie jak życie, poziom, nazwa itp. W ten sposób powstanie nam masa klas posiadających w wielu miejscach dokładnie taki sam kod, czego byśmy nie chcieli. </p>
 
 <pre class="colorx"><code class="c++">class Wojownik
 {

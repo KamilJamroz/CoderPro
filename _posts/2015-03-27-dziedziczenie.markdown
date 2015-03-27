@@ -81,7 +81,7 @@ public:
     //gettery i settery
 };</code></pre>
 
-<p>Nie wygląda to imponująco, nie pisałem getterów, setterów i konstruktora a i tak kod wygląda na zbyt powtórzony i bezsensowny. Aby rozwiązać ten problem będziemy dziedziczyć klasę z innej klasy:</p>
+<p class="midmar">Nie wygląda to imponująco, nie pisałem getterów, setterów i konstruktora a i tak kod wygląda na zbyt powtórzony i bezsensowny. Aby rozwiązać ten problem będziemy dziedziczyć klasę z innej klasy:</p>
 
 <pre class="colorx"><code class="c++">class Bohater
 {
@@ -159,14 +159,9 @@ składniki public oraz protected są w klasie pochodnej od teraz private</p>
 <li> Operator przypisania (=)</li>
 </ul>
 
-<pre class="colorx midmar"><code class="c++">int x = 10;
-int *wsk; // deklaracja zmiennej wskaźnikowej
-wsk = &x; // przypisanie zmiennej adresu komórki, w której mieści się x
-cout << *wsk; // Jaka jest zawartość komórki o adresie &x? Oczywiście 10</code></pre>
-
 <h2 class="section-heading">Konstruktor w klasie pochodnej</h2>
 
-<p>Konstruktor musimy napisać sami, ponieważ każda klasa pochodna różni się między sobą. Aby nie przepisywać od nowa atrybutów klasy podstawowej robimy coś takiego:</p>
+<p class="midmar">Konstruktor musimy napisać sami, ponieważ każda klasa pochodna różni się między sobą. Aby nie przepisywać od nowa atrybutów klasy podstawowej robimy coś takiego:</p>
 
 <pre class="colorx"><code class="c++">Bohater(string _nazwa, int _hp, int _mp, int _poziom) //konstruktor w klasie Bohater
     {
@@ -184,12 +179,12 @@ Wojownik( string nazwa, int hp, int mp, int poziom, int _sila) : Bohater(nazwa, 
 
 <p>Dodatkowo możemy ustawić wartości domyśle, które przyjmą się jeżeli sami nie wprowadzimy naszych podczas tworzenia obiektu: (tak można robić z każdym konstruktorem, w klasie podstawowej również)</p>
 
-Wojownik(int _sila = 10) : Bohater(nazwa = "nazwa", hp = 100, mp = 20, poziom = 1) //konstruktor w klasie Wojownik
+<pre class="colorx"><code class="c++">Wojownik(int _sila = 10) : Bohater(nazwa = "nazwa", hp = 100, mp = 20, poziom = 1) //konstruktor w klasie Wojownik
     {
         sila = _sila;
-    }
+    }</code></pre>
 
-h2 class="section-heading">Dodatki</h2>
+<h2 class="section-heading">Dodatki</h2>
 
 <p class="midmar">Do zaprezentowania dziedziczenia konstruktora w klasie pochodnej użyłem preambuły konstruktora, prościej listy inicjalizacyjnej.</p>
 

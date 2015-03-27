@@ -177,9 +177,9 @@ Wojownik( string nazwa, int hp, int mp, int poziom, int _sila) : Bohater(nazwa, 
     }
 </code></pre>
 
-<p>Dodatkowo możemy ustawić wartości domyśle, które przyjmą się jeżeli sami nie wprowadzimy naszych podczas tworzenia obiektu: (tak można robić z każdym konstruktorem, w klasie podstawowej również)</p>
+<p class="midmar">Dodatkowo możemy ustawić wartości domyśle, które przyjmą się jeżeli sami nie wprowadzimy naszych podczas tworzenia obiektu: (tak można robić z każdym konstruktorem, w klasie podstawowej również)</p>
 
-<pre class="colorx"><code class="c++">Wojownik(int _sila = 10) : Bohater(nazwa = "nazwa", hp = 100, mp = 20, poziom = 1) //konstruktor w klasie Wojownik
+<pre class="colorx"><code class="c++">Wojownik( string nazwa = "Wojo", int hp = 100, int mp = 20, int poziom = 1, int _sila = 20) : Bohater(nazwa, hp, mp, poziom)
     {
         sila = _sila;
     }</code></pre>

@@ -81,7 +81,7 @@ public:
     //gettery i settery
 };</code></pre>
 
-<p class="midmar">Nie wygląda to imponująco, nie pisałem getterów, setterów i konstruktora a i tak kod wygląda na zbyt powtórzony i bezsensowny. Aby rozwiązać ten problem będziemy dziedziczyć klasę z innej klasy:</p>
+<p class="midmar">Nie wygląda to imponująco, nie pisałem getterów, setterów i konstruktora a i tak kod wygląda na zbyt bardzo powtórzony i bezsensowny. Aby rozwiązać ten problem będziemy dziedziczyć klasę z innej klasy:</p>
 
 <pre class="colorx"><code class="c++">class Bohater
 {

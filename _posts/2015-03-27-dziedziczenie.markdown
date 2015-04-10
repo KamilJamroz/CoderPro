@@ -133,7 +133,7 @@ public:
     }
 };</code></pre>
 
-<p>Operatorem dwukropka informujemy, że nasza nowa klasa po prawej stronie ma odziedziczyć cechy po tej z prawej strony. Public po dwukropku to typ dziedziczenia o czym za chwilę napiszę. Jeżeli w klasie pochodnej chcielibyśmy nieco zmodyfikować  odziedziczoną metodę, piszemy ją na nowo a ona sama zostanie nadpisana. </p>
+<p>Operatorem dwukropka informujemy, że nasza nowa klasa po lewej stronie ma odziedziczyć cechy po tej z prawej strony. Public po dwukropku to typ dziedziczenia o czym za chwilę napiszę. Jeżeli w klasie pochodnej chcielibyśmy nieco zmodyfikować  odziedziczoną metodę, piszemy ją na nowo a ona sama zostanie nadpisana. </p>
 
 <h2 class="section-heading">Określanie dostępu do składników w klasie podstawowej</h2>
 

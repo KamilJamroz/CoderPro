@@ -1,0 +1,68 @@
+---
+layout:     post
+title:      "Funkcje++"
+subtitle:   "więcej funkcji!"
+
+date:       2015-04-11 17:00:00
+author:     "Mrozo"
+header-img: "img/post-bg-09.jpg"
+---
+
+<h2 class="section-heading toph">Przeciążane funkcji</h2>
+
+<p class="midmar">Przeciążona funkcja może przyjmować różne argumenty i w zależności od nich zwracać inne wartości:</p>
+
+<pre class="colorx"><code class="c++">void funkcja(int x)
+    {
+        //kod
+    }
+
+    void funkcja(string x)
+    {
+        //kod
+    }
+
+    void funkcja(int x, string y)
+    {
+        //kod
+    }
+
+    funkcja(5);
+    funkcja("tekst");
+    funkcja(10, "tekst");</code></pre>
+
+<p class="midmar">Jak widzisz powyżej mamy przeciążoną funkcję. Mimo tej samej nazwy funkcja ta może różnie się zachowywać.</p>
+
+<h2 class="section-heading">Funkcje zaprzyjaźnione</h2>
+
+<p class="midmar">W niektórych przypadkach chcielibyśmy aby funkcja znajdująca się <b>poza</b> klasą miała dostęp do jej danych (nawet tych prywatnych)
+<br><br>Funkcja zaprzyjaźniona może być przyjacielem więcej niż jednej klasy.</p>
+
+<p class="midmar">Po co te całe przyjaźnie? Załóżmy, że chcemy napisać prosty mechanizm walki w grze 2D.
+Jeżeli tekstura (to co widzimy w grze jako miecz) naszego miecza pokryje się z teksturą przeciwnika będzie to oznaczało, że trafiliśmy i zadajemy obrażenia. Jak tego dokonać? Możemy stworzyć funkcję, która będzie sprawdzała czy współrzędne tekstury miecza (dane w jednej klasie) nachodzą na współrzędne tekstury przeciwnika (dane w innej klasie). Oczywiści taka funkcja będzie musiała mieć dostęp do tych informacji.
+<br><br>
+Zawsze klasa deklaruje kto jest jej przyjacielem bo to ona udostępnia innym swoje dane. Nie ma tak, że jakaś funkcja powie sobie, że ma samych przyjaciół co mogłoby być być kłamstwem ponieżaż klasy by jej nie znały i nie pozwalały korzystać ze swoich prywatnych skarbów ;)
+</p>
+
+
+<pre class="colorx"><code class="c++">class Klasa1
+{
+  //kod
+public:
+  friend void funkcjaZaprzyjazniona(Klasa1 x, Klasa2 y);
+};
+
+class Klasa2
+{
+  //kod
+public:
+  friend void funkcjaZaprzyjazniona(Klasa1 x, Klasa2 y);
+};
+
+void funkcjaZaprzyjazniona(Klasa1 x, Klasa2 y)
+{
+  cos = x.zmienna_z_klasy_1 + y.zmienna_z_klasy_2 //mamy dostęp do zmiennych prywatnych z klas!
+}
+</code></pre>
+
+<p>Oprócz funkcji możemy również przyjaźnić ze sobą klasy :D ale o tym kiedy indziej ;)</p>

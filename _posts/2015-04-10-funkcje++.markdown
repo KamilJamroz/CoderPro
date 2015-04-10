@@ -13,23 +13,23 @@ header-img: "img/post-bg-09.jpg"
 <p class="midmar">Przeciążona funkcja może przyjmować różne argumenty i w zależności od nich zwracać inne wartości:</p>
 
 <pre class="colorx"><code class="c++">void funkcja(int x)
-    {
-        //kod
-    }
+{
+    //kod
+}
 
-    void funkcja(string x)
-    {
-        //kod
-    }
+void funkcja(string x)
+{
+    //kod
+}
 
-    void funkcja(int x, string y)
-    {
-        //kod
-    }
+void funkcja(int x, string y)
+{
+    //kod
+}
 
-    funkcja(5);
-    funkcja("tekst");
-    funkcja(10, "tekst");</code></pre>
+funkcja(5);
+funkcja("tekst");
+funkcja(10, "tekst");</code></pre>
 
 <p class="midmar">Jak widzisz powyżej mamy przeciążoną funkcję. Mimo tej samej nazwy funkcja ta może różnie się zachowywać.</p>
 

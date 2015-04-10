@@ -39,9 +39,9 @@ funkcja(10, "tekst");</code></pre>
 <br><br>Funkcja zaprzyjaźniona może być przyjacielem więcej niż jednej klasy.</p>
 
 <p class="midmar">Po co te całe przyjaźnie? Załóżmy, że chcemy napisać prosty mechanizm walki w grze 2D.
-Jeżeli tekstura (to co widzimy w grze jako miecz) naszego miecza pokryje się z teksturą przeciwnika będzie to oznaczało, że trafiliśmy i zadajemy obrażenia. Jak tego dokonać? Możemy stworzyć funkcję, która będzie sprawdzała czy współrzędne tekstury miecza (dane w jednej klasie) nachodzą na współrzędne tekstury przeciwnika (dane w innej klasie). Oczywiści taka funkcja będzie musiała mieć dostęp do tych informacji.
+Jeżeli tekstura (to co widzimy w grze jako miecz) naszego miecza pokryje się z teksturą przeciwnika będzie to oznaczało, że trafiliśmy i zadajemy obrażenia. Jak tego dokonać? Możemy stworzyć funkcję, która będzie sprawdzała czy współrzędne tekstury miecza (dane w jednej klasie) nachodzą na współrzędne tekstury przeciwnika (dane w innej klasie). Oczywiście taka funkcja będzie musiała mieć dostęp do tych informacji.
 <br><br>
-Zawsze klasa deklaruje kto jest jej przyjacielem bo to ona udostępnia innym swoje dane. Nie ma tak, że jakaś funkcja powie sobie, że ma samych przyjaciół co mogłoby być być kłamstwem ponieżaż klasy by jej nie znały i nie pozwalały korzystać ze swoich prywatnych skarbów ;)
+Zawsze klasa deklaruje kto jest jej przyjacielem bo to ona udostępnia innym swoje dane. Nie ma tak, że jakaś funkcja powie sobie, że ma samych przyjaciół co mogłoby być kłamstwem ponieważ klasy by jej nie znały i nie pozwalały korzystać ze swoich prywatnych skarbów ;)
 </p>
 
 

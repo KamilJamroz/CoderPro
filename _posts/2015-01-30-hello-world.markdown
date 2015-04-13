@@ -34,7 +34,7 @@ Niestety zanim przejdziemy do bardziej skomplikowanej magii musimy zrozumieć co
 
 <h2 class="section-heading">&#35;include</h2>
 
-<p class="midmar">&#35;include to dyrektywa preprocesora, a po polsku znaczy "zawierać", "io" to skrót od "input", "output", a stream to "strumień".
+<p class="midmar"><span class="blue">&#35;include</span> to dyrektywa preprocesora, a po polsku znaczy "zawierać", "io" to skrót od "input", "output", a stream to "strumień".
 Łącząc wszystko w jedną całość uzyskamy coś w rodzaju "załącz strumień wejścia i wyjścia"
 Oznacza to, że kiedy program zacznie się kompilować właśnie w tym miejscu pojawi się kod, który pozwoli komputerowi kontaktować się z użytkownikiem. Jeżeli wpiszemy coś do konsoli, komputr będzie mógł to odczytać (wejście) i zwrócić nam jakąś informację (wyjście).
 Przydatna biblioteka, prawda?
@@ -43,7 +43,7 @@ Dzięki temu my nie musimy pisać paruset linijek kodu. Oczywiście isnieje wię
 
 <h2 class="section-heading">using namespace std;</h2>
 
-<p class="midmar">Using namespace std oznacza "używanie przestrzeni nazw std"
+<p class="midmar"><span class="blue">Using namespace</span> std oznacza "używanie przestrzeni nazw std"
 Każde polecenie znajduje się w danej przestrzeni nazw. Po co i co to jest?
 Jeżeli programista1 chciałby napisać sobie polecenie "jakasfunkcja" i w tym samym momencie drugi programista zrobiłby inne o tej samej nazwie a oba wczytalibyśmy z bibliotek, program nie miałby pojęcia, o które polecenie nam chodzi. Dlatego powstały przestrzenie nazw. Od teraz możemy napisać:</p>
 
@@ -85,12 +85,12 @@ using std::endl;
 using std::cin;
 </pre>
 
-<p class="midmar">Znamy już podstawy przestrzeni nazw. W takim razie jakie polecenia znajdują się w przestrzeni nazw ::std? (standard library)
+<p class="midmar">Znamy już podstawy przestrzeni nazw. W takim razie jakie polecenia znajdują się w przestrzeni nazw <span class="blue">::std</span>? (standard library)
 Te, których dzisiaj będziemy używać to cout, cin oraz endl.</p>
 
 <h2 class="section-heading">Cout Cin Endl</h2>
 
-<p class="midmar"><b>cout</b> (c out) to polecenie, za pomocą którego program może wyświetlić dane na naszym ekranie.</p>
+<p class="midmar"><span class="blue">cout</span> (c out) to polecenie, za pomocą którego program może wyświetlić dane na naszym ekranie.</p>
 <pre>
 cout << "Hello World!";                   <span class="output">Hello World!</span>
 cout << "2+8";                            <span class="output">2+8</span>
@@ -100,7 +100,7 @@ cout << 2+8;                              <span class="output">10</span>
 <p>Tak! W C++ możemy dodawać, odejmować, mnożyć, dzielić, używać nawiasów do wymuszania pierwszeństwa działania. Jeżeli chcielibyśmy użyć bardziej zaawansowanych form matematycznych takich jak pierwiastki czy logarytmy wystarczy wczytać bibliotekę math.h. Wszystko zawarte w cudzysłowiach jest uznawane za tekst.
 Teraz wprowadźmy zmienne.
 
-<b>Zmienna</b> to nic innego jak pojemnik na dane. Każda zmienna ma swój rodzaj: może to być tekst, liczba całkowita, liczba zmiennoprzecinkowa, znak.
+<span class="blue">Zmienna</span> to nic innego jak pojemnik na dane. Każda zmienna ma swój rodzaj: może to być tekst, liczba całkowita, liczba zmiennoprzecinkowa, znak.
 Jak możemy powiedzieć jakiego rodzaju jest zmienna? A oto mała tabelka do wkłucia:
 </p>
 
@@ -138,7 +138,7 @@ bool - prawda albo fałsz</p>
 <p>Zauważcie, że tylko na samym początku dopisujemy int, ten proces nazywa się deklaracją zmiennej.
 Po zadeklarowaniu (stworzeniu i nadaniu wartości) zmiennej już nie będziemy mogli zmienić jej rodzaju.</p>
 
-<p class="lowmar"><b>cin</b> (c in), to polecenie, za pomocą którego jesteśmy w stanie wprowadzić dane do środka programu.
+<p class="lowmar"><span class="blue">cin</span> (c in), to polecenie, za pomocą którego jesteśmy w stanie wprowadzić dane do środka programu.
 <pre>
   int liczba = 0;
   cin >> liczba;                   <span class="output">to podaje użytkownik</span>
@@ -146,7 +146,7 @@ Po zadeklarowaniu (stworzeniu i nadaniu wartości) zmiennej już nie będziemy m
 </pre>
 </p>
 
-<p class="lowmar">A teraz połączmy strumienie (tak, to co braliśmy na linuxie!) i dodajmy <b>endl</b>, czyli zakończenie linii (end line):</p>
+<p class="lowmar">A teraz połączmy strumienie (tak, to co braliśmy na linuxie!) i dodajmy <span class="blue">endl</span>, czyli zakończenie linii (end line):</p>
 
 <pre class="midmar">
   string imie = "";

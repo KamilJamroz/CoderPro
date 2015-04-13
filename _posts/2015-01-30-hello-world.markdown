@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Hello World!"
-subtitle:   "Czyli duża dawka teorii."
+subtitle:   "Dużo teorii."
 date:       2015-01-31 01:00:00
 author:     "Mrozo"
 header-img: "img/post-bg-01.jpg"
@@ -14,7 +14,7 @@ header-img: "img/post-bg-01.jpg"
 Każdy poprawnie napisany program w C będzie jednocześnie poprawnym programem języka C++, czyli C jest podzbiorem C++. Bla Bla Blah</p>
 
 
-<p class="midmar">Tak, wiem że każdy z was chciałby po tygodniu robić własne Wiedźminy, jednak zanim zaczniemy tworzyć takie cuda, musimy zająć się tym:</p>
+<p class="midmar">Tak, wiem że każdy z was chciałby po tygodniu robić własne Wiedźminy, jednak zanim zaczniemy tworzyć takie cuda musimy zająć się tym:</p>
 
 <pre class="colorx">
 <code class="c++">
@@ -30,11 +30,11 @@ int main()
 </code>
 </pre>
 
-Niestety zanim przejdziemy do bardziej skomplikowanych struktur musimy zrozumieć co właściwie dzieje się nieco wyżej.
+Niestety zanim przejdziemy do bardziej skomplikowanej magii musimy zrozumieć co właściwie dzieje się nieco powyżej.
 
 <h2 class="section-heading">&#35;include</h2>
 
-<p>&#35;include to dyrektywa preprocesora, a po polsku: include znaczy "zawierać", "io" to skrót od "input", "output", a stream to "strumień".
+<p class="midmar">&#35;include to dyrektywa preprocesora, a po polsku znaczy "zawierać", "io" to skrót od "input", "output", a stream to "strumień".
 Łącząc wszystko w jedną całość uzyskamy coś w rodzaju "załącz strumień wejścia i wyjścia"
 Oznacza to, że kiedy program zacznie się kompilować właśnie w tym miejscu pojawi się kod, który pozwoli komputerowi kontaktować się z użytkownikiem. Jeżeli wpiszemy coś do konsoli, komputr będzie mógł to odczytać (wejście) i zwrócić nam jakąś informację (wyjście).
 Przydatna biblioteka, prawda?
@@ -43,20 +43,20 @@ Dzięki temu my nie musimy pisać paruset linijek kodu. Oczywiście isnieje wię
 
 <h2 class="section-heading">using namespace std;</h2>
 
-<p class="lowmar">Using namespace std oznacza "używanie przestrzeni nazw std"
+<p class="midmar">Using namespace std oznacza "używanie przestrzeni nazw std"
 Każde polecenie znajduje się w danej przestrzeni nazw. Po co i co to jest?
-Jeżeli programista1 chciałby napisać sobie polecenie "jakasfunkcja" i w tym samym momencie drugi programista zrobiłby takie samo, a oba wczytalibyśmy z bibliotek. Program nie miałby pojęcia, o które polecenie nam chodzi, dlatego powstały przestrzenie nazw. Od teraz możemy napisać:</p>
+Jeżeli programista1 chciałby napisać sobie polecenie "jakasfunkcja" i w tym samym momencie drugi programista zrobiłby inne o tej samej nazwie a oba wczytalibyśmy z bibliotek, program nie miałby pojęcia, o które polecenie nam chodzi. Dlatego powstały przestrzenie nazw. Od teraz możemy napisać:</p>
 
-<pre>
+<pre class="midmar">
 programista1::jakasfunkcja
 programista2::jakasfunkcja
 </pre>
 
-<p class="lowmar">Dzięki temu program się nie pogubi. No dobrze, ale po co to using namespace? Jeżeli wiemy, że w namym programie nie będziemy używać dwóch jednakowych zestawów poleceń możemy ustawić jedną przestrzeń jako domyślną:</p>
+<p class="midmar">Dzięki temu program się nie pogubi. No dobrze, ale po co to using namespace? Jeżeli wiemy, że w namym programie nie będziemy używać dwóch jednakowych zestawów poleceń możemy ustawić jedną przestrzeń jako domyślną:</p>
 
-<pre>using namespace programista1;</pre>
+<pre class="midmar">using namespace programista1;</pre>
 
-<p class="lowmar">I od teraz nie musimy pisać za każdym razem:</p>
+<p class="midmar">I od teraz nie musimy pisać za każdym razem:</p>
 
 <pre>
 programista1::obliczpierwiastek
@@ -65,32 +65,32 @@ programista1::funkcja3
 programista1::siema
 </pre>
 
-<p class="lowmar">tylko możemy zrobić tak:</p>
+<p class="midmar">tylko możemy zrobić tak:</p>
 
-<pre>
+<pre class="midmar">
 obliczpierwiastek
 superpolecenie
 funkcja3
 siema
 </pre>
 
-<p class="lowmar">i program sam będzie wiedział jakiej przestrzeni używamy.
+<p class="midmar">i program sam będzie wiedział jakiej przestrzeni używamy.
 Pomyślcie ile właśnie zaoszczędziliście czasu.
-Oczywiście w ogromnych projektach może to stanowić problem, dlatego możemy również ustawić przestrzeń nie dla wszystkich poleceń, ale tylko dla jednego:
+Oczywiście w ogromnych projektach może to stanowić problem, dlatego możemy również ustawić przestrzeń tylko dla jednego polecenia z danej przestrzeni:
 </p>
 
-<pre>
+<pre class="midmar">
 using std::cout;
 using std::endl;
 using std::cin;
 </pre>
 
-<p>Znamy już podstawy przestrzeni nazw. W takim razie jakie polecenia znajdująsię w przestrzeni nazw ::std? (standard library)
+<p class="midmar">Znamy już podstawy przestrzeni nazw. W takim razie jakie polecenia znajdują się w przestrzeni nazw ::std? (standard library)
 Te, których dzisiaj będziemy używać to cout, cin oraz endl.</p>
 
 <h2 class="section-heading">Cout Cin Endl</h2>
 
-<p class="lowmar"><b>cout</b> (c out) to polecenie, za pomocą którego program może wyświetlić dane na naszym ekranie.</p>
+<p class="midmar"><b>cout</b> (c out) to polecenie, za pomocą którego program może wyświetlić dane na naszym ekranie.</p>
 <pre>
 cout << "Hello World!";                   <span class="output">Hello World!</span>
 cout << "2+8";                            <span class="output">2+8</span>
@@ -111,7 +111,7 @@ Jak możemy powiedzieć jakiego rodzaju jest zmienna? A oto mała tabelka do wk�
 int    - liczba całkowia<br>
 float  - liczba zmiennoprzecinkowa<br>
 char   - znak<br>
-string - łańcuch znaków, czyli tekst</p>
+string - łańcuch znaków, czyli tekst<br>
 bool - prawda albo fałsz</p>
 
 <p class="lowmar">Stwórzmy zmienną o nazwie liczba przechowującą liczbę całkowitą 230:</p>

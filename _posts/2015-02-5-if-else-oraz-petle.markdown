@@ -23,13 +23,10 @@ using namespace std;
 
 int main()
 {
-   int liczba = 0;
-   //zadeklarowanie liczby
-   cin >> liczba
-   //wprowadzenie liczby przez użytkownika // ups, nie zamknął się!
+   int liczba = 0; //to jest zadeklarowanie liczby
+   cin >> liczba //a to wprowadzenie liczby przez użytkownika
    cout << liczba;
-   /* wypisanie zmiennej liczba
-     to jest komentarz wieee-
+   /* komentarz wieee-
      -eeelo liniowy */ tu już kod działa!
    return 0;
 }

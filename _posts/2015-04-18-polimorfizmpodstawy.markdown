@@ -84,7 +84,7 @@ int main ()
 Polygon area</pre>
 
 <p>Zauważ, że klasy trójkąt i kwadrat mają możliwość korzystania z klasy wielokąt. Dlaczego? No bo one SĄ wielokątami! Najtrudniejszym aspektem do ogarniecia jest fakt, iż klasa dziedziczona (dziecko) JEST jednocześnie klasą główną (rodzicem). Taka abstrakcja ;) <br>
-W takim przypadku aby funkcja mogła zostać wywołana używamy strzałki "->" zamiast operatora kropki.</p>
+W takim przypadku aby funkcja mogła zostać wywołana używamy strzałki "<span class="blue">-></span>" zamiast operatora kropki.</p>
 
 <h2 class="section-heading toph">Klasy abstrakcyjne i funkcje wirtualne</h2>
 
@@ -96,7 +96,7 @@ Polygon class area</pre>
 <p class="lowmar">A my przecież nie chcemy Polygona tylko dane figury, których pole chcemy obliczyć.</p>
 <p class="midmar">Powodem złego działania jest to, że funkcja area() została już raz zadeklarowana przez kompilator jako wersja zdefiniowana w klasie bazowej - Polygon.<br><br>
 Rozwiązanie: klasa abstrakcyjna.
-Klasa abstrakcyjna to klasa, w której przynajmniej jedna z metod jest czysto wirtualna, czyli musimy stworzyć metodę czysto wirtualną dodając słowo <span class="blue">virtual</span> i przypisując do metody liczbę 0.</p>
+<span class="blue">Klasa abstrakcyjna</span> to klasa, w której przynajmniej jedna z metod jest czysto wirtualna, czyli musimy stworzyć <span class="blue">metodę czysto wirtualną</span> dodając słowo <span class="blue">virtual</span> i przypisując do metody liczbę 0.</p>
 
 <pre class="midmar">virtual int area() = 0;</pre>
 

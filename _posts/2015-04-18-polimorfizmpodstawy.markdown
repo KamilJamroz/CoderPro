@@ -36,7 +36,7 @@ header-img: "img/post-bg-10.jpg"
 
     int area()
     {
-        cout << "Polygon area" << endl;
+      cout << "Polygon area" << endl;
       return (0);
     }
 };
@@ -46,7 +46,7 @@ class Rectangle : public Polygon
   public:
     int area()
     {
-        cout << "Rectangle area" << endl;
+      cout << "Rectangle area" << endl;
       return (width * height);
     }
 };
@@ -56,7 +56,7 @@ class Triangle : public Polygon
   public:
     int area()
     {
-        cout << "Triangle area" << endl;
+      cout << "Triangle area" << endl;
       return (width * height / 2);
     }
 };
@@ -66,8 +66,8 @@ int main ()
   Rectangle rectangle;
   Triangle triangle;
 
-  Polygon * polygon1 = &rectangle;
-  Polygon * polygon2 = &triangle;
+  Polygon * polygon1 = &#38;rectangle;
+  Polygon * polygon2 = &#38;triangle;
 
   polygon1->setup(2,2);
   polygon2->setup(2,2);
